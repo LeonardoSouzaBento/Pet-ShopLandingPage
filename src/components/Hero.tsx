@@ -13,7 +13,7 @@ const Hero = () => {
     <section className={`relative min-h-[90vh] flex items-center justify-center overflow-hidden`}>
       {/* Background Image with Overlay */}
       <div className={`absolute inset-0 z-0`}>
-        <div className={`absolute inset-0 bg-gradient-hero z-10`} />
+        <div className={`absolute inset-0 gradient-hero z-10`} />
         <img
           src={heroImage}
           alt="Cachorro e gato felizes"
@@ -28,7 +28,7 @@ const Hero = () => {
       {/* Content */}
       <div className={`relative z-20 section-container text-center text-white`}>
         <div className={`max-w-4xl mx-auto space-y-6 slide-up`}>
-          <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm mb-4`}>
+          <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-xs mb-4`}>
             <Heart className={`w-5 h-5 text-secondary`} fill="currentColor" />
             <span className={`font-medium`}>Cuidado com amor e profissionalismo</span>
           </div>

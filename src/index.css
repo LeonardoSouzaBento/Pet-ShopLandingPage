@@ -43,8 +43,8 @@
   --color-section-light: oklch(98% 0.01 85);
   --color-section-medium: oklch(96% 0.01 210);
 
-  --color-footer-bg: oklch(35% 0.08 45);
-  --color-footer-bg-end: oklch(25% 0.09 40);
+  --color-footer-bg: #332402;
+  --color-footer-bg-end: #1c1400;
   --color-footer-foreground: oklch(97% 0.01 240);
 
   /* Border Radius */
@@ -91,10 +91,26 @@
 @layer base {
   :root {
     /* Gradientes personalizados */
-    --gradient-primary: linear-gradient(135deg, oklch(50% 0.12 185), oklch(60% 0.11 185));
-    --gradient-secondary: linear-gradient(135deg, oklch(68% 0.18 55), oklch(75% 0.16 55));
-    --gradient-hero: linear-gradient(135deg, oklch(48% 0.13 185 / 0.95), oklch(40% 0.12 185 / 0.85));
-    --gradient-card: linear-gradient(180deg, oklch(100% 0 0), oklch(97% 0.01 185));
+    --gradient-primary: linear-gradient(
+      135deg,
+      oklch(50% 0.12 185),
+      oklch(60% 0.11 185)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      oklch(68% 0.18 55),
+      oklch(75% 0.16 55)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      oklch(48% 0.13 185 / 0.95),
+      oklch(40% 0.12 185 / 0.85)
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      oklch(100% 0 0),
+      oklch(97% 0.01 185)
+    );
   }
 }
 
@@ -108,45 +124,17 @@
     color: var(--color-foreground);
     font-size: 1.08125em;
     font-family: var(--font-sans);
-  }
-
-  @media (width >= 40rem) {
-    body {
-      font-size: 1.09772em;
-    }
-  }
-
-  @media (width >= 48rem) {
-    body {
-      font-size: 1.10568em;
-    }
-  }
-
-  @media (width >= 64rem) {
-    body {
-      font-size: 1.12159em;
-    }
-  }
-
-  @media (width >= 80rem) {
-    body {
-      font-size: 1.13750em;
-    }
-  }
-
-  @media (width >= 96rem) {
-    body {
-      font-size: 1.15341em;
-    }
+    @apply text-[1.08125em] sm:text-[1.09772em] md:text-[1.10568em] 
+    lg:text-[1.12159em] xl:text-[1.13750em] 2xl:text-[1.15341em];
   }
 
   div {
     border-radius: var(--radius-2xl);
   }
-  
+
   h1 {
     font-weight: 600;
-    font-size: 2.312139em;
+    font-size: 2.31214em;
     letter-spacing: 0.025em;
   }
 
@@ -155,17 +143,20 @@
     line-height: 1.25;
   }
 
+  h3 {
+    @apply text-[1.15606em] font-semibold;
+  }
+
   p {
     font-weight: 400;
     font-family: var(--font-body);
   }
 
   h2,
-  h3,
   h4,
   h5,
   h6 {
-    font-weight: 600;
+     @apply font-semibold;
   }
 
   .section-container {
@@ -223,7 +214,8 @@
   }
 
   @keyframes float {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0px);
     }
     50% {
@@ -232,7 +224,8 @@
   }
 
   @keyframes bounce-icon {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(0) scale(1);
     }
     50% {
@@ -241,7 +234,8 @@
   }
 
   @keyframes wiggle {
-    0%, 100% {
+    0%,
+    100% {
       transform: rotate(0deg);
     }
     25% {
