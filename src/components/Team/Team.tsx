@@ -3,6 +3,7 @@ import { TeamStats } from "./components/TeamStats.tsx";
 import { TeamGrid } from "./components/TeamGrid.tsx";
 import { TeamImage } from "./components/TeamImage.tsx";
 import SectionWrapper from "../ui/SectionWrapper.tsx";
+import { Section } from "@/components/ui/Section";
 
 const teamMembers = [
   {
@@ -29,7 +30,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <section className={`py-10 px-6 md:px-8 lg:px-12 bg-section-medium`}>
+    <Section variant="medium">
       <SectionHeader
         title="Quem somos"
         subtitle="Somos um pet shop que acredita que cada animal merece cuidado, afeto e atenção especial. Aqui, seu pet é tratado como parte da família. Nossa equipe é treinada para oferecer o melhor atendimento, sempre com muito carinho e dedicação."
@@ -45,6 +46,6 @@ export default function Team() {
           </div>
         </div>
       </SectionWrapper>
-    </section>
+    </Section>
   );
 }

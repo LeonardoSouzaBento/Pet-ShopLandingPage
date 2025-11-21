@@ -1,10 +1,11 @@
 import storeImage from "@/assets/store-front.jpg";
 import { SectionHeader } from "@/components/ui/section-header";
 import SectionWrapper from "./ui/SectionWrapper";
+import { Section } from "@/components/ui/Section";
 
 const History = () => {
   return (
-    <section className={`py-10 px-6 md:px-8 lg:px-12 bg-section-medium`}>
+    <Section variant="medium">
       <SectionHeader title="Nossa história" />
       <SectionWrapper styles="grid xl:grid-cols-2 gap-12 lg:max-w-3xl! xl:max-w-6xl! items-center">
         {/* Image */}
@@ -49,7 +50,7 @@ const History = () => {
           </div>
         </div>
       </SectionWrapper>
-    </section>
+    </Section>
   );
 };
 
