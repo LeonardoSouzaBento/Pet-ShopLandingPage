@@ -33,7 +33,7 @@ const Hero = () => {
             <span className={`font-medium`}>Cuidado com amor e profissionalismo</span>
           </div>
           
-          <h1 className={`font-display font-extrabold leading-tight text-[1.38728em]`}>
+          <h1 className={`font-display font-extrabold leading-tight`}>
             Cuidamos do seu pet com carinho e alegria
           </h1>
           
