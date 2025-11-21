@@ -6,7 +6,7 @@ const ContactCardsList = () => {
   return (
     <div className={`space-y-8 -order-1 lg:order-2`}>
       <div className={`space-y-5 slide-up`}>
-        <div className={`grid grid-cols-1 md:grid-cols-2 gap-5`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5`}>
           <ContactCard
             icon={<MapPin className={`w-6 h-6 text-primary`} />}
             title="Endereço"
