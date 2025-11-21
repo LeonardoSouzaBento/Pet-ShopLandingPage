@@ -26,8 +26,7 @@ const ContactCardsList = () => {
           icon={<Clock className={`w-6 h-6 text-primary`} />}
           title="Horário de atendimento"
         >
-          Segunda a Sexta – 9h às 18h<br />
-          Sábados – 8h às 14h
+          Segunda a Sexta – 9h às 18h • Sábados – 8h às 14h
         </ContactCard>
       </div>
 

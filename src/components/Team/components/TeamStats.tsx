@@ -14,14 +14,14 @@ export function TeamStats() {
       <div className={css.wrapper}>
         <h3 className={css.h3}>
           <strong className={`${css.strong} tracking-wider`}>+ 1000</strong>
-          <br /> Pets atendidos
+          <br /> <span className="text-secondary">Pets atendidos</span>
         </h3>
       </div>
 
       <div className={css.wrapper}>
         <h3 className={css.h3}>
           <strong className={css.strong}>+ 5</strong> <br />
-          Anos de experiência
+          <span className="text-secondary">Anos de experiência</span>
         </h3>
       </div>
     </div>
