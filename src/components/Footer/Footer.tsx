@@ -36,10 +36,7 @@ const Footer = () => {
           icon={<Clock className={css.icon} strokeWidth={1.7} />}
           title="Horário de atendimento"
         >
-          <>
-            Seg a Sex: 9h às 18h <br />
-            Sábados: 8h às 14h
-          </>
+          Seg a Sex: 9h às 18h • Sábados: 8h às 14h
         </ContactInfoItem>
       </div>
 

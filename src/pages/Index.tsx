@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import Hero from "@/components/Hero";
 import Team from "@/components/Team/Team";
 import History from "@/components/History";
@@ -9,6 +10,7 @@ import ContactSection from "@/components/Contact/ContactSection";
 const Index = () => {
   return (
     <div className={`min-h-screen`}>
+      <Logo />
       <Hero />
       <ServicesSection />
       <Team />
