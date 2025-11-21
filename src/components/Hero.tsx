@@ -12,12 +12,12 @@ const Hero = () => {
   return (
     <section className={`relative min-h-[90vh] flex items-center justify-center overflow-hidden`}>
       {/* Background Image with Overlay */}
-      <div className={`absolute inset-0 z-0`}>
-        <div className={`absolute inset-0 gradient-hero z-10`} />
+      <div className={`absolute inset-0 z-0 rounded-none`}>
+        <div className={`absolute inset-0 gradient-hero z-10 rounded-none`} />
         <img
           src={heroImage}
           alt="Cachorro e gato felizes"
-          className={`w-full h-full object-cover bg-muted`}
+          className={`w-full h-full object-cover bg-muted rounded-none`}
           loading="eager"
         />
       </div>
@@ -33,7 +33,7 @@ const Hero = () => {
             <span className={`font-medium`}>Cuidado com amor e profissionalismo</span>
           </div>
           
-          <h1 className={`font-display font-extrabold leading-tight`}>
+          <h1 className={`font-display font-extrabold leading-tight text-[1.38728em]`}>
             Cuidamos do seu pet com carinho e alegria
           </h1>
           

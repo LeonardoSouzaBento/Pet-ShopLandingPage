@@ -13,7 +13,7 @@ export function TeamMemberCard({ name, role, experience, index }: Props) {
   return (
     <Card
       className={`bg-white rounded-2xl border-none shadow-soft hover:shadow-hover 
-        transition-all slide-up`}
+        transition-all duration-300 slide-up`}
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <CardContent className={`p-6 text-center`}>
