@@ -2,6 +2,7 @@ import DecorativeBlob from "@/components/DecorativeBlob";
 import { SectionHeader } from "@/components/ui/section-header";
 import { DifferentialsList } from "./components/DifferentialsList";
 import { ServicesGrid } from "./components/ServicesGrid";
+import { Section } from "@/components/ui/Section";
 import {
   Calendar,
   Droplet,
@@ -70,9 +71,7 @@ const differentials = [
 
 export default function ServicesSection() {
   return (
-    <section
-      className={`py-10 px-3 sm:px-6 md:px-8 lg:px-12 bg-section-light relative overflow-hidden`}
-    >
+    <Section variant="light" className="relative overflow-hidden">
       <DecorativeBlob position="top-right" color="primary" size="lg" />
       <DecorativeBlob position="bottom-left" color="secondary" size="md" />
 
@@ -85,6 +84,6 @@ export default function ServicesSection() {
         <DifferentialsList differentials={differentials} />
         <ServicesGrid services={services} />
       </SectionWrapper>
-    </section>
+    </Section>
   );
 }
