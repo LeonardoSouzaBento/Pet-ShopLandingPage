@@ -4,11 +4,11 @@ import ContactButton from "./contact-button";
 
 const ContactCardsList = () => {
   return (
-    <div className="space-y-8 -order-1 lg:order-2">
-      <div className="space-y-6 slide-up">
+    <div className={`space-y-8 -order-1 lg:order-2`}>
+      <div className={`space-y-5 slide-up`}>
 
         <ContactCard
-          icon={<MapPin className="w-6 h-6 text-primary" />}
+          icon={<MapPin className={`w-6 h-6 text-primary`} />}
           title="Endereço"
         >
           Rua Exemplo, 123 – Centro<br />
@@ -16,14 +16,14 @@ const ContactCardsList = () => {
         </ContactCard>
 
         <ContactCard
-          icon={<Phone className="w-6 h-6 text-primary" />}
+          icon={<Phone className={`w-6 h-6 text-primary`} />}
           title="Telefone / WhatsApp"
         >
           (XX) XXXXX-XXXX
         </ContactCard>
 
         <ContactCard
-          icon={<Clock className="w-6 h-6 text-primary" />}
+          icon={<Clock className={`w-6 h-6 text-primary`} />}
           title="Horário de atendimento"
         >
           Segunda a Sexta – 9h às 18h<br />

@@ -2,7 +2,7 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { TeamStats } from "./components/TeamStats.tsx";
 import { TeamGrid } from "./components/TeamGrid.tsx";
 import { TeamImage } from "./components/TeamImage.tsx";
-import WrapperSection from "../ui/WrapperSection.tsx";
+import SectionWrapper from "../ui/SectionWrapper.tsx";
 
 const teamMembers = [
   {
@@ -35,22 +35,16 @@ export default function Team() {
         subtitle="Somos um pet shop que acredita que cada animal merece cuidado, afeto e atenção especial. Aqui, seu pet é tratado como parte da família. Nossa equipe é treinada para oferecer o melhor atendimento, sempre com muito carinho e dedicação."
         subtitleStyles="lg:hidden"
       />
-      <WrapperSection>
-        <div className={`lg:grid grid-cols-2 gap-8`}>
+      <SectionWrapper>
+        <div className={``}>
           <TeamGrid members={teamMembers} />
-          <div className={`lg:-order-1 flex flex-col gap-6`}>
-            <TeamStats />
+          <div className={`lg:-order-1 grid gap-6
+            lg:grid-cols-[218px_auto] bg-white p-8`}>
             <TeamImage />
-            
-            <p>
-              Somos um pet shop que acredita que cada animal merece cuidado,
-              afeto e atenção especial. Aqui, seu pet é tratado como parte da
-              família. Nossa equipe é treinada para oferecer o melhor
-              atendimento, sempre com muito carinho e dedicação.
-            </p>
+            <TeamStats />
           </div>
         </div>
-      </WrapperSection>
+      </SectionWrapper>
     </section>
   );
 }

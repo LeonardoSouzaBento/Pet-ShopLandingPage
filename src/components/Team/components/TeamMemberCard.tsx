@@ -17,12 +17,12 @@ export function TeamMemberCard({ name, role, experience, index }: Props) {
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <CardContent className={`p-6 text-center`}>
-        <div className={`w-24 h-24 rounded-full bg-linear-to-br from-primary 
-          to-secondary flex items-center justify-center mx-auto -mt-12 mb-6 shadow-soft`}>
-          <User className={`w-12 h-12 text-white`} />
+        <div className={`size-19 rounded-full bg-linear-to-br from-primary/50 
+          to-primary flex items-center justify-center mx-auto -mt-12 mb-6 shadow-soft`}>
+          <User strokeWidth={1.5} className={`w-12 h-12 text-white`} />
         </div>
 
-        <h3 className={`text-card-foreground mb-2`}>{name}</h3>
+        <h3 className={`text-card-foreground mb-3`}>{name}</h3>
         <p className={`text-primary font-semibold mb-3`}>{role}</p>
         <p className={`text-muted-foreground leading-relaxed`}>{experience}</p>
       </CardContent>

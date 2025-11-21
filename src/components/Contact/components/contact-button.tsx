@@ -13,7 +13,8 @@ const ContactButton = () => {
     <Button
       size="lg"
       onClick={handleWhatsApp}
-      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full py-6 shadow-lg hover:shadow-primary/50 transition-all"
+      className={`w-full py-6 bg-primary text-primary-foreground rounded-full 
+        shadow-lg hover:shadow-md transition-all`}
     >
       Chamar no WhatsApp
     </Button>

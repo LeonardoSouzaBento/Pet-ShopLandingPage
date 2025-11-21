@@ -1,14 +1,14 @@
 import storeImage from "@/assets/store-front.jpg";
 import { SectionHeader } from "@/components/ui/section-header";
-import WrapperSection from "./ui/WrapperSection";
+import SectionWrapper from "./ui/SectionWrapper";
 
 const History = () => {
   return (
     <section className={`py-10 px-6 md:px-8 lg:px-12 bg-section-medium`}>
       <SectionHeader title="Nossa história" />
-      <WrapperSection styles="grid lg:grid-cols-2 gap-12 items-center">
+      <SectionWrapper styles="grid xl:grid-cols-2 gap-12 lg:max-w-3xl! xl:max-w-6xl! items-center">
         {/* Image */}
-        <div className={`order-2 lg:order-1 fade-in`}>
+        <div className={`order-2 lg:order-2 fade-in`}>
           <div className={`rounded-xl overflow-hidden shadow-2xl`}>
             <img
               src={storeImage}
@@ -20,8 +20,9 @@ const History = () => {
         </div>
 
         {/* Text Content */}
-        <div className={`order-1 lg:order-2 space-y-6 fade-in`}>
-          <div className={`space-y-4 text-muted-foreground leading-relaxed`}>
+        <div className={`space-y-6 fade-in`}>
+          <div className={`space-y-4 text-muted-foreground 
+            leading-relaxed text-center`}>
             <p>
               Fundado em 2012, o Patas & Cia Pet Shop surgiu com o objetivo de
               oferecer serviços de cuidado pet com qualidade e responsabilidade.
@@ -47,7 +48,7 @@ const History = () => {
             </p>
           </div>
         </div>
-      </WrapperSection>
+      </SectionWrapper>
     </section>
   );
 };

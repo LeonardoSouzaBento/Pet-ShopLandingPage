@@ -12,20 +12,22 @@ import {
   Stethoscope,
   Truck,
 } from "lucide-react";
-import WrapperSection from "../ui/WrapperSection";
+import SectionWrapper from "../ui/SectionWrapper";
 
 const services = [
   {
     icon: Droplet,
     title: "Banho completo",
-    description: "Higiene com produtos especiais para pele e pelos",
+    description:
+      "Higiene caprichada com produtos adequados para manter pele e pelos saudáveis",
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
   {
     icon: Scissors,
     title: "Tosa e estética",
-    description: "Tesoura, máquina, laços, hidratação e finalização",
+    description:
+      "Tosa na tesoura ou máquina, hidratação especial e finalização com estilo",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
   },
@@ -33,14 +35,15 @@ const services = [
     icon: Stethoscope,
     title: "Cuidados veterinários",
     description:
-      "Consultas de rotina, check-ups preventivos, vacinas e orientações médicas",
+      "Consultas preventivas, vacinas, exames básicos e orientações para seu pet",
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
   {
     icon: Truck,
     title: "Transporte pet",
-    description: "Vamos até você buscar e levar seu pet com segurança",
+    description:
+      "Coleta e entrega seguras com veículo preparado para conforto e tranquilidade",
     color: "text-secondary",
     bgColor: "bg-secondary/10",
   },
@@ -78,10 +81,10 @@ export default function ServicesSection() {
         subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz."
         wrapperStyles="relative z-10"
       />
-      <WrapperSection styles="lg:max-w-none">
+      <SectionWrapper styles="lg:max-w-none">
         <DifferentialsList differentials={differentials} />
         <ServicesGrid services={services} />
-      </WrapperSection>
+      </SectionWrapper>
     </section>
   );
 }
