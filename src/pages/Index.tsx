@@ -1,5 +1,5 @@
 import Logo from "@/components/Logo";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero/Hero";
 import Team from "@/components/Team/Team";
 import History from "@/components/History";
 import Footer from "@/components/Footer/Footer";

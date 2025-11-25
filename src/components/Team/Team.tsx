@@ -33,14 +33,15 @@ export default function Team() {
     <Section variant="medium">
       <SectionHeader
         title="Quem somos"
-        subtitle="Somos um pet shop que acredita que cada animal merece cuidado, afeto e atenção especial. Aqui, seu pet é tratado como parte da família. Nossa equipe é treinada para oferecer o melhor atendimento, sempre com muito carinho e dedicação."
-        subtitleStyles="lg:hidden"
       />
+      
       <SectionWrapper>
         <div className={``}>
           <TeamGrid members={teamMembers} />
-          <div className={`lg:-order-1 grid gap-6
-            lg:grid-cols-[218px_auto] bg-white p-8 shadow-md`}>
+          <div
+            className={`lg:-order-1 grid gap-6
+            lg:grid-cols-[218px_auto] bg-white p-8 shadow-md`}
+          >
             <TeamImage />
             <TeamStats />
           </div>

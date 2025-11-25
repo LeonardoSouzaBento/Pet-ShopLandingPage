@@ -19,7 +19,7 @@ export function ServiceCard({
 }: ServiceCardProps) {
   return (
     <div
-      className={`transition-all duration-300 slide-up relative rounded-2xl
+      className={`transition-all duration-200 slide-up relative rounded-2xl
       text-card-foreground shadow-md hover:shadow-hover-md bg-white`}
       style={{ animationDelay: `${delay}s` }}
     >

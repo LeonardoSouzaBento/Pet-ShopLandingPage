@@ -4,8 +4,9 @@ import { DifferentialItem } from "./DifferentialItem";
 export function DifferentialsList({ differentials }) {
   return (
     <div
-      className={`mb-10 p-8 bg-white shadow-xl grid lg:grid-cols-[auto_380px] lg:gap-8
-     xl:grid-cols-[auto_420px] `}
+      className={`mb-10 p-8 bg-white shadow-md hover:shadow-lg grid 
+        lg:grid-cols-[auto_380px] lg:gap-8 xl:grid-cols-[auto_420px] 
+        transition-all duration-200`}
     >
       <div
         className={`mb-6 lg:mb-0 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1

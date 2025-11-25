@@ -2,37 +2,25 @@ git init
 ✅ 4. Adicione o repositório remoto criado pelo Lovable
 No Lovable, copie a URL do repositório (algo como):
 
-arduino
-Copiar código
 https://github.com/seu-user/seu-repo.git
 Depois, no terminal:
 
-csharp
-Copiar código
 git remote add origin https://github.com/seu-user/seu-repo.git
 Se já existir um remote chamado "origin" e der erro:
 
-csharp
-Copiar código
 git remote remove origin
 git remote add origin https://github.com/seu-user/seu-repo.git
 ✅ 5. Adicione todos os arquivos para commit
-csharp
-Copiar código
+
 git add .
 ✅ 6. Faça o primeiro commit
-sql
-Copiar código
+
 git commit -m "Primeiro commit com os arquivos do ZIP"
 ✅ 7. Envie tudo para o repositório do Lovable
 Se o repositório estiver vazio:
 
-css
-Copiar código
 git branch -M main
 git push -u origin main
 Se ele tiver branch diferente:
 
-css
-Copiar código
 git push origin main -f

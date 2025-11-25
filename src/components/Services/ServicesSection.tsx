@@ -71,7 +71,7 @@ const differentials = [
 
 export default function ServicesSection() {
   return (
-    <Section variant="light" className="relative overflow-hidden">
+    <Section variant="light" className={`relative overflow-hidden`}>
       <DecorativeBlob position="top-right" color="primary" size="lg" />
       <DecorativeBlob position="bottom-left" color="secondary" size="md" />
 

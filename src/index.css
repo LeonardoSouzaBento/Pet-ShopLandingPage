@@ -6,46 +6,57 @@
   --font-sans: "Fredoka", sans-serif;
   --font-body: "Nunito", sans-serif;
 
-  /* Colors */
-  --color-background: oklch(96.5% 0.01 85);
-  --color-foreground: oklch(30% 0.03 210);
+  /* CORE */
+  --color-background: oklch(97% 0.01 90);
+  --color-foreground: oklch(28% 0.03 95);
 
+  /* CARD */
   --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(30% 0.03 210);
+  --color-card-foreground: oklch(28% 0.03 95);
 
+  /* POPOVER */
   --color-popover: oklch(100% 0 0);
-  --color-popover-foreground: oklch(30% 0.03 210);
+  --color-popover-foreground: oklch(28% 0.03 95);
 
-  --color-primary: oklch(50% 0.12 185);
-  --color-primary-light: oklch(60% 0.11 185);
-  --color-primary-foreground: oklch(100% 0 0);
+  /* PRIMARY - TURQUESA SUAVE */
+  --color-primary: oklch(50% 0.12 170);
+  --color-primary-light: oklch(60% 0.11 165);
+  --color-primary-foreground: oklch(98% 0.01 95);
 
-  --color-secondary: oklch(68% 0.18 55);
-  --color-secondary-light: oklch(75% 0.16 55);
-  --color-secondary-foreground: oklch(100% 0 0);
+  /* SECONDARY — QUENTE HARMONIZADO */
+  --color-secondary: oklch(68% 0.18 75);
+  --color-secondary-light: oklch(75% 0.16 90);
+  --color-secondary-foreground: oklch(98% 0.01 95);
 
-  --color-muted: oklch(94% 0.01 210);
-  --color-muted-foreground: oklch(55% 0.02 210);
+  /* MUTED — AGORA NEUTRO, NÃO MAIS AZUL */
+  --color-muted: oklch(93.5% 0.01 95);
+  --color-muted-foreground: oklch(54% 0.02 95);
 
-  --color-accent: oklch(95% 0.04 85);
-  --color-accent-foreground: oklch(30% 0.03 210);
+  /* ACCENT — LEVE, QUENTE E COMPATÍVEL COM AS SECTIONS */
+  --color-accent: oklch(95% 0.03 92);
+  --color-accent-foreground: oklch(30% 0.04 95);
 
-  --color-destructive: oklch(60% 0.22 25);
-  --color-destructive-foreground: oklch(100% 0 0);
+  /* DESTRUCTIVE — VERMELHO QUENTE COESO */
+  --color-destructive: oklch(58% 0.16 30);
+  --color-destructive-foreground: oklch(98% 0.01 100);
 
-  --color-border: oklch(92% 0.01 210);
-  --color-input: oklch(92% 0.01 210);
-  --color-ring: oklch(50% 0.12 185);
+  /* BORDERS / INPUTS — NEUTROS QUENTES */
+  --color-border: oklch(92% 0.01 95);
+  --color-input: oklch(92% 0.01 95);
+  --color-ring: oklch(50% 0.13 170);
 
-  --color-hero-from: oklch(48% 0.13 185);
-  --color-hero-to: oklch(40% 0.12 185);
+  /* HERO GRADIENT — AJUSTADO PARA HARMONIZAR COM PRIMARY */
+  --color-hero-from: oklch(48% 0.12 165);
+  --color-hero-to: oklch(40% 0.12 165);
 
+  /* SECTIONS */
   --color-section-light: oklch(98% 0.01 85);
-  --color-section-medium: oklch(96% 0.01 210);
+  --color-section-medium: oklch(96% 0.01 100);
 
-  --color-footer-bg: #332402;
-  --color-footer-bg-end: #1c1400;
-  --color-footer-foreground: oklch(97% 0.01 240);
+  /* FOOTER */
+  --color-footer-bg: #362905;
+  --color-footer-bg-end: #1f1802;
+  --color-footer-foreground: oklch(96% 0.01 95);
 
   /* Border Radius */
   --radius: 0.75rem;
@@ -118,14 +129,18 @@
   * {
     border-color: var(--color-border);
   }
-
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  html {
+    scrollbar-width: 0;
+  }
   body {
     background-color: var(--color-background);
-    color: var(--color-foreground);
     font-size: 1.08125em;
     font-family: var(--font-sans);
     @apply text-[1.08125em] sm:text-[1.09772em] md:text-[1.10568em] 
-    lg:text-[1.12159em] xl:text-[1.13750em] 2xl:text-[1.15341em];
+    lg:text-[1.12159em] xl:text-[1.13750em] 2xl:text-[1.15341em] text-foreground;
   }
 
   div {
@@ -156,7 +171,7 @@
   h4,
   h5,
   h6 {
-     @apply font-semibold;
+    @apply font-semibold;
   }
 
   .section-container {

@@ -22,7 +22,7 @@ const History = () => {
 
         {/* Text Content */}
         <div className={`space-y-6 fade-in`}>
-          <div className={`space-y-4 text-muted-foreground 
+          <div className={`px-5 space-y-4 text-muted-foreground 
             leading-relaxed text-center`}>
             <p>
               Fundado em 2012, o Patas & Cia Pet Shop surgiu com o objetivo de
