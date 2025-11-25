@@ -6,57 +6,48 @@
   --font-sans: "Fredoka", sans-serif;
   --font-body: "Nunito", sans-serif;
 
-  /* CORE */
-  --color-background: oklch(97% 0.01 90);
-  --color-foreground: oklch(28% 0.03 95);
+  /* Colors */
+  --color-background: oklch(96.5% 0.01 85);
+  --color-foreground: oklch(30% 0.03 210);
 
-  /* CARD */
   --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(28% 0.03 95);
+  --color-card-foreground: oklch(30% 0.03 210);
 
-  /* POPOVER */
   --color-popover: oklch(100% 0 0);
-  --color-popover-foreground: oklch(28% 0.03 95);
+  --color-popover-foreground: oklch(30% 0.03 210);
 
-  /* PRIMARY - TURQUESA SUAVE */
   --color-primary: oklch(50% 0.12 170);
-  --color-primary-light: oklch(60% 0.11 165);
-  --color-primary-foreground: oklch(98% 0.01 95);
-
-  /* SECONDARY — QUENTE HARMONIZADO */
+  --color-primary-light: oklch(60% 0.11 185);
+  --color-primary-foreground: oklch(100% 0 0);
+  --color-primary-soft: oklch(50% 0.12 170 / 0.15);
   --color-secondary: oklch(68% 0.18 75);
-  --color-secondary-light: oklch(75% 0.16 90);
-  --color-secondary-foreground: oklch(98% 0.01 95);
+  --color-secondary-light: oklch(75% 0.16 55);
+  --color-secondary-foreground: oklch(100% 0 0);
 
-  /* MUTED — AGORA NEUTRO, NÃO MAIS AZUL */
-  --color-muted: oklch(93.5% 0.01 95);
-  --color-muted-foreground: oklch(54% 0.02 95);
+  --color-brown: oklch(28% 0.03 40);
 
-  /* ACCENT — LEVE, QUENTE E COMPATÍVEL COM AS SECTIONS */
-  --color-accent: oklch(95% 0.03 92);
-  --color-accent-foreground: oklch(30% 0.04 95);
+  --color-muted: oklch(94% 0.01 210);
+  --color-muted-foreground: oklch(55% 0.02 210);
 
-  /* DESTRUCTIVE — VERMELHO QUENTE COESO */
-  --color-destructive: oklch(58% 0.16 30);
-  --color-destructive-foreground: oklch(98% 0.01 100);
+  --color-accent: oklch(95% 0.04 85);
+  --color-accent-foreground: oklch(30% 0.03 210);
 
-  /* BORDERS / INPUTS — NEUTROS QUENTES */
-  --color-border: oklch(92% 0.01 95);
-  --color-input: oklch(92% 0.01 95);
-  --color-ring: oklch(50% 0.13 170);
+  --color-destructive: oklch(60% 0.22 25);
+  --color-destructive-foreground: oklch(100% 0 0);
 
-  /* HERO GRADIENT — AJUSTADO PARA HARMONIZAR COM PRIMARY */
-  --color-hero-from: oklch(48% 0.12 165);
-  --color-hero-to: oklch(40% 0.12 165);
+  --color-border: oklch(92% 0.01 210);
+  --color-input: oklch(92% 0.01 210);
+  --color-ring: oklch(50% 0.12 185);
 
-  /* SECTIONS */
+  --color-hero-from: oklch(48% 0.13 185);
+  --color-hero-to: oklch(40% 0.12 185);
+
   --color-section-light: oklch(98% 0.01 85);
   --color-section-medium: oklch(96% 0.01 100);
 
-  /* FOOTER */
-  --color-footer-bg: #362905;
-  --color-footer-bg-end: #1f1802;
-  --color-footer-foreground: oklch(96% 0.01 95);
+  --color-footer-bg: #332402;
+  --color-footer-bg-end: #1c1400;
+  --color-footer-foreground: oklch(97% 0.01 240);
 
   /* Border Radius */
   --radius: 0.75rem;
@@ -74,7 +65,6 @@
   --shadow-xl: 0 16px 40px oklch(30% 0.03 210 / 0.14);
   --shadow-primary: 0 8px 24px oklch(50% 0.12 185 / 0.15);
   --shadow-secondary: 0 8px 24px oklch(68% 0.18 55 / 0.15);
-
   --shadow-hover-xs: 0 4px 12px oklch(30% 0.03 210 / 0.1);
   --shadow-hover-sm: 0 6px 20px oklch(30% 0.03 210 / 0.12);
   --shadow-hover-md: 0 12px 32px oklch(30% 0.03 210 / 0.14);
@@ -128,6 +118,7 @@
 @layer base {
   * {
     border-color: var(--color-border);
+    cursor: default;
   }
   html::-webkit-scrollbar {
     display: none;
@@ -137,10 +128,11 @@
   }
   body {
     background-color: var(--color-background);
+    color: var(--color-foreground);
     font-size: 1.08125em;
     font-family: var(--font-sans);
     @apply text-[1.08125em] sm:text-[1.09772em] md:text-[1.10568em] 
-    lg:text-[1.12159em] xl:text-[1.13750em] 2xl:text-[1.15341em] text-foreground;
+    lg:text-[1.12159em] xl:text-[1.13750em] 2xl:text-[1.15341em];
   }
 
   div {
@@ -159,10 +151,11 @@
   }
 
   h3 {
-    @apply text-[1.15606em] font-semibold;
+    @apply text-[1.15606em] font-semibold tracking-normal;
   }
 
   p {
+    @apply text-card-foreground;
     font-weight: 400;
     font-family: var(--font-body);
   }
@@ -171,7 +164,7 @@
   h4,
   h5,
   h6 {
-    @apply font-semibold;
+    @apply font-semibold text-card-foreground;
   }
 
   .section-container {
@@ -275,5 +268,11 @@
 
   .gradient-hero {
     background: var(--gradient-hero);
+  }
+}
+
+@layer components {
+  .material-symbols-rounded {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   }
 }

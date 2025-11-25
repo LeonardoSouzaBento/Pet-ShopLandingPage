@@ -7,7 +7,7 @@ export function TeamImage() {
         <img
           src={vetImage}
           alt="Veterinária segurando um pet"
-          className={`w-full h-full object-cover bg-muted`}
+          className={`w-full h-[400px] max-h-[500px] md:h-full object-cover bg-muted`}
           loading="lazy"
         />
       </div>

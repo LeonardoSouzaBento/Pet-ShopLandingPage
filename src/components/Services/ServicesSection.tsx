@@ -54,18 +54,22 @@ const differentials = [
   {
     icon: Home,
     title: "Ambiente acolhedor",
+    description: "Espaço pensado para o bem estar animal",
   },
   {
     icon: Sparkles,
     title: "Produtos de alta qualidade",
+    description: "Marcas reconhecidas e confiáveis",
   },
   {
     icon: Calendar,
     title: "Agendamentos flexíveis",
+    description: "Horários que se ajustam à sua rotina",
   },
   {
     icon: Shield,
     title: "Espaço seguro e higienizado",
+    description: "Mantemos o ambiente organizado e limpo",
   },
 ];
 

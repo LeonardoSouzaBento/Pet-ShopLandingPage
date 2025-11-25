@@ -10,11 +10,11 @@ const History = () => {
       <SectionWrapper styles="grid xl:grid-cols-2 gap-12 lg:max-w-3xl! xl:max-w-6xl! items-center">
         {/* Image */}
         <div className={`order-2 lg:order-2 fade-in`}>
-          <div className={`rounded-xl overflow-hidden shadow-2xl`}>
+          <div className={`rounded-xl overflow-hidden shadow-xl`}>
             <img
               src={storeImage}
               alt="Fachada da nossa loja"
-              className={`w-full h-full object-cover bg-muted`}
+              className={`w-full h-full max-h-[480px] object-cover bg-muted`}
               loading="lazy"
             />
           </div>

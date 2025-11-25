@@ -1,21 +1,33 @@
-import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const css = {
+  button: `size-12 p-0 fixed bottom-4 right-4 z-12 rounded-lg bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover:shadow-hover-lg transition-all hover:scale-110`,
+  img: `size-7 pl-px pb-px`,
+};
 
 const WhatsAppButton = () => {
   const handleWhatsApp = () => {
-    const phone = "5500000000000"; // Substituir pelo número real com código do país
-    const message = "Olá! Gostaria de saber mais sobre os serviços do Pet Shop.";
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    const phone = "5500000000000";
+    const message =
+      "Olá! Gostaria de saber mais sobre os serviços do Pet Shop.";
+    window.open(
+      `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
   };
 
   return (
     <Button
       onClick={handleWhatsApp}
       size="lg"
-      className={`fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover:shadow-hover-lg transition-all hover:scale-110`}
+      className={css.button}
       aria-label="Contato via WhatsApp"
     >
-      <MessageCircle className={`w-8 h-8`} fill="currentColor" />
+      <img
+        src="/white-whatsapp.png"
+        alt="imagem da logo do whatsapp"
+        className={css.img}
+      />
     </Button>
   );
 };

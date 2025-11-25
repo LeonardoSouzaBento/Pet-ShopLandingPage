@@ -34,13 +34,13 @@ export default function Team() {
       <SectionHeader
         title="Quem somos"
       />
-      
+
       <SectionWrapper>
         <div className={``}>
           <TeamGrid members={teamMembers} />
           <div
             className={`lg:-order-1 grid gap-6
-            lg:grid-cols-[218px_auto] bg-white p-8 shadow-md`}
+            lg:grid-cols-[280px_auto] xl:grid-cols-[315px_auto] bg-white p-8 shadow-lg`}
           >
             <TeamImage />
             <TeamStats />

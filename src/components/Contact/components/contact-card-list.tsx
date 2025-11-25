@@ -10,15 +10,18 @@ const ContactCardsList = () => {
       <div className={`space-y-5 slide-up`}>
         <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5`}>
           <ContactCard
-            icon={<MapPin className={iconStyles} strokeWidth={2.2}/>}
+            icon="home_pin"
+            iconStyles="text-[25px]!"
             title="Endereço"
           >
-            Rua Exemplo, 123 – Centro<br />
+            Rua Exemplo, 123 – Centro
+            <br />
             Sua Cidade
           </ContactCard>
 
           <ContactCard
-            icon={<Phone className={`size-5.5 text-primary`} />}
+            icon="call"
+            iconStyles="text-[22.5px]!"
             title="Telefone / WhatsApp"
           >
             (XX) XXXXX-XXXX
@@ -26,7 +29,8 @@ const ContactCardsList = () => {
         </div>
 
         <ContactCard
-          icon={<Clock className={iconStyles} />}
+          icon="schedule"
+          iconStyles="text-[22px]!"
           title="Horário de atendimento"
         >
           Segunda a Sexta – 9h às 18h • Sábados – 8h às 14h

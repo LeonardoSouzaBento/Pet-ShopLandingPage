@@ -12,7 +12,7 @@ interface Props {
 export function TeamMemberCard({ name, role, experience, index }: Props) {
   return (
     <Card
-      className={`bg-white rounded-2xl border-none shadow-md hover:shadow-hover-md 
+      className={`bg-white rounded-2xl border-none shadow-sm hover:shadow-hover-sm 
         transition-all duration-200 slide-up`}
       style={{ animationDelay: `${index * 0.1}s` }}
     >
@@ -22,9 +22,9 @@ export function TeamMemberCard({ name, role, experience, index }: Props) {
           <User strokeWidth={1.5} className={`w-12 h-12 text-white`} />
         </div>
 
-        <h3 className={`text-card-foreground mb-3`}>{name}</h3>
-        <p className={`text-primary font-semibold mb-3`}>{role}</p>
-        <p className={`text-muted-foreground leading-relaxed`}>{experience}</p>
+        <h3 className={`mb-3`}>{name}</h3>
+        <p className={`font-semibold mb-3`}>{role}</p>
+        <p className={`leading-relaxed`}>{experience}</p>
       </CardContent>
     </Card>
   );
