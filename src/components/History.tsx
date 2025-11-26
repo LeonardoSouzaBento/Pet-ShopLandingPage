@@ -22,30 +22,24 @@ const History = () => {
 
         {/* Text Content */}
         <div className={`space-y-6 fade-in`}>
-          <div className={`px-5 space-y-4 text-muted-foreground 
-            leading-relaxed text-center`}>
+          <div
+            className={`px-5 space-y-4 text-muted-foreground 
+            leading-relaxed text-center`}
+          >
             <p>
-              Fundado em 2012, o Patas & Cia Pet Shop surgiu com o objetivo de
-              oferecer serviços de cuidado pet com qualidade e responsabilidade.
-              Começamos com uma equipe pequena e estrutura básica, atendendo
-              principalmente banho e tosa.
+              Fundado em 2012, o O Melhor Pet Shop começou com uma equipe
+              pequena e estrutura básica, atendendo principalmente banho e tosa.
             </p>
 
             <p>
-              Com o aumento da demanda, investimos em equipamentos modernos,
-              treinamento técnico da equipe e a ampliação do espaço físico. A
-              partir de 2016, passamos a oferecer também serviços
-              especializados, como protocolos de banho para peles sensíveis,
-              tosa higiênica para pets idosos e atendimento adaptado para
-              animais ansiosos.
+              Com o aumento da demanda, investimos em equipamentos e
+              treinamento da equipe. Especializamos nossos serviços para
+              animais idosos e animais ansiosos.
             </p>
 
             <p>
-              Hoje, atendemos mais de 2.000 tutores na região, com foco em
-              segurança, bem-estar e qualidade no atendimento. Mantemos um
-              processo interno de atualização contínua, revisando produtos,
-              técnicas e procedimentos para garantir um serviço cada vez mais
-              eficiente.
+              Hoje, atendemos mais de 2.000 tutores na região. Mantemo-nos atualizados revisando produtos,
+              técnicas e procedimentos para garantir sempre bons serviços.
             </p>
           </div>
         </div>

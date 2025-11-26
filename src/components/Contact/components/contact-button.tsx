@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const ContactButton = () => {
   const handleWhatsApp = () => {
-    const phone = "5534982125832";
+    const phone = "553484125832";
     window.open(
       `https://wa.me/${phone}?text=Olá! Gostaria de agendar um horário.`,
       "_blank"

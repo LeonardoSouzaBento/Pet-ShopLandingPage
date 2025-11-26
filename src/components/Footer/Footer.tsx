@@ -2,7 +2,7 @@ import { Heart, MapPin, Phone, Clock } from "lucide-react";
 import { ContactInfoItem } from "./ContactInfoItem";
 
 const css = {
-  footer: `w-full bg-linear-to-tl from-footer-bg to-footer-bg-end text-background`,
+  footer: `w-full  text-background`,
   container: `max-w-max mx-auto p-5 pb-3 flex justify-start min-[540px]:justify-center 
   min-[540px]:text-center flex-wrap lg:gap-5 sm:text-left`,
   icon: `size-5 shrink-0 mb-1`,
@@ -12,7 +12,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={css.footer}>
+    <footer className={`${css.footer} bg-linear-to-br from-[#007858] to-[hsl(165,100%,10%)]`}>
       <div className={css.container}>
         <ContactInfoItem
           icon="home_pin"

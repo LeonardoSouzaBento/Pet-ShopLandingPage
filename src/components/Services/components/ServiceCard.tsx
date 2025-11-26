@@ -12,7 +12,7 @@ interface ServiceCardProps {
 const css = {
   wrapper: `transition-all duration-200 slide-up relative rounded-2xl
       text-card-foreground shadow-sm hover:shadow-hover-sm bg-white`,
-  wrapperIcon: `w-16 h-16 -mt-12 mb-6 rounded-2xl flex items-center justify-center 
+  wrapperIcon: `w-16 h-16 -mt-12 mb-5.5 rounded-2xl flex items-center justify-center 
   bounce-icon shadow-primary-soft mx-auto`,
   h3: `text-foreground mb-3 text-[1.1845em] tracking-normal`,
   p: `leading-relaxed`,
