@@ -1,11 +1,9 @@
-import { SectionHeader } from "@/components/ui/section-header";
-import { ServiceCard } from "./ServiceCard";
 import type { Service } from "../ServicesSection";
+import { ServiceCard } from "./ServiceCard";
 
 export function ServicesGrid({ services }: { services: Service[] }) {
   return (
     <div>
-      <SectionHeader title="Nossos serviços" />
       <div
         className={`mb-6 grid min-[520px]:grid-cols-2 lg:grid-cols-4 gap-6
       relative z-10 `}

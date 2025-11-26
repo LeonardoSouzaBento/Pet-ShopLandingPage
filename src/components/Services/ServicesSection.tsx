@@ -100,6 +100,7 @@ export default function ServicesSection() {
       />
       <SectionWrapper styles="lg:max-w-none">
         <DifferentialsList differentials={differentials} />
+        <SectionHeader title="Nossos serviços" />
         <ServicesGrid services={services} />
       </SectionWrapper>
     </Section>
