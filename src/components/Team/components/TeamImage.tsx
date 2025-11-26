@@ -1,4 +1,4 @@
-import vetImage from "@/assets/vet-with-pet.jpg";
+import vetImage from "@/assets/woman-with-pet.png";
 
 export function TeamImage() {
   return (

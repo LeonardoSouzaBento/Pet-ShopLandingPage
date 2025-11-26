@@ -7,9 +7,10 @@ interface Props {
   role: string;
   experience: string;
   index: number;
+  image: string;
 }
 
-export function TeamMemberCard({ name, role, experience, index }: Props) {
+export function TeamMemberCard({ name, role, experience, index, image }: Props) {
   return (
     <Card
       className={`bg-white rounded-2xl border-none shadow-sm hover:shadow-hover-sm 
@@ -17,9 +18,10 @@ export function TeamMemberCard({ name, role, experience, index }: Props) {
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <CardContent className={`p-6 text-center`}>
-        <div className={`size-19 rounded-full bg-linear-to-br from-primary/50 
-          to-primary flex items-center justify-center mx-auto -mt-12 mb-6 shadow-soft`}>
-          <User strokeWidth={1.5} className={`w-12 h-12 text-white`} />
+        <div className={`size-28 rounded-full bg-linear-to-br from-primary/50 
+          to-primary flex items-center justify-center mx-auto -mt-12 mb-6 shadow-soft
+          overflow-hidden`}>
+          <img src={image} alt={name} className={`size-full object-cover scale-110 object-top`} />
         </div>
 
         <h3 className={`mb-3`}>{name}</h3>

@@ -1,18 +1,13 @@
 import { TeamMemberCard } from "./TeamMemberCard.tsx";
-
-interface Member {
-  name: string;
-  role: string;
-  experience: string;
-}
+import type { TeamMember } from "../Team";
 
 interface Props {
-  members: Member[];
+  members: TeamMember[];
 }
 
 export function TeamGrid({ members }: Props) {
   return (
-    <div className={`grid mb-6 min-[500px]:grid-cols-2 lg:grid-cols-4 gap-6 `}>
+    <div className={`grid mb-6 min-[500px]:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 `}>
       {members.map((member, index) => (
         <TeamMemberCard
           key={index}
@@ -20,6 +15,7 @@ export function TeamGrid({ members }: Props) {
           role={member.role}
           experience={member.experience}
           index={index}
+          image={member.image}
         />
       ))}
     </div>

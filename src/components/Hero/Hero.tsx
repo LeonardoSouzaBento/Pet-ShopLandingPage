@@ -8,7 +8,7 @@ import {
 const Hero = () => {
   return (
     <section
-      className={`relative w-full h-[90vh] max-h-[920px] flex items-center justify-center -mt-5 
+      className={`relative w-full h-[84vh] max-h-[920px] flex items-center justify-center -mt-5 
       max-[376px]:-mt-5 min-[376px]:-mt-10 min-[1200px]:mt-0 xl:max-h-[540px]
       overflow-hidden `}
     >
