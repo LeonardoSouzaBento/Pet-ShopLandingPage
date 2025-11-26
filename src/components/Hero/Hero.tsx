@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       className={`relative w-full h-[90vh] max-h-[920px] flex items-center justify-center -mt-5 
-      max-[374px]:-mt-5 min-[375px]:-mt-20 min-[1200px]:-mt-8 xl:max-h-[540px]
+      max-[376px]:-mt-5 min-[376px]:-mt-10 min-[1200px]:-mt-8 xl:max-h-[540px]
       overflow-hidden `}
     >
       <FloatingElements />

@@ -1,7 +1,8 @@
 import { SectionHeader } from "@/components/ui/section-header";
 import { ServiceCard } from "./ServiceCard";
+import type { Service } from "../ServicesSection";
 
-export function ServicesGrid({ services }) {
+export function ServicesGrid({ services }: { services: Service[] }) {
   return (
     <div>
       <SectionHeader title="Nossos serviços" />
@@ -9,7 +10,7 @@ export function ServicesGrid({ services }) {
         className={`mb-6 grid min-[520px]:grid-cols-2 lg:grid-cols-4 gap-6
       relative z-10 `}
       >
-        {services.map((service, index: number) => (
+        {services.map((service, index) => (
           <ServiceCard
             key={index}
             icon={service.icon}

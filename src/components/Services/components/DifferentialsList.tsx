@@ -1,7 +1,8 @@
 import bathingImage from "@/assets/bathing-service.jpg";
 import { DifferentialItem } from "./DifferentialItem";
+import type { Differential } from "../ServicesSection";
 
-export function DifferentialsList({ differentials }) {
+export function DifferentialsList({ differentials }: { differentials: Differential[] }) {
   return (
     <div
       className={`mb-10 p-8 bg-white shadow-md hover:shadow-lg grid 

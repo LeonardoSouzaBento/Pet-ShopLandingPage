@@ -15,7 +15,15 @@ import {
 } from "lucide-react";
 import SectionWrapper from "../ui/SectionWrapper";
 
-const services = [
+export interface Service {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  color: "text-primary" | "text-secondary";
+  bgColor: string;
+}
+
+const services: Service[] = [
   {
     icon: Droplet,
     title: "Banho completo",
@@ -50,7 +58,13 @@ const services = [
   },
 ];
 
-const differentials = [
+export interface Differential {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+}
+
+const differentials: Differential[] = [
   {
     icon: Home,
     title: "Ambiente acolhedor",
