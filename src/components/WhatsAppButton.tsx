@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { openWhatsApp } from "@/utils/whatsappUtils";
 
 const css = {
   button: `size-13 p-0 fixed bottom-4 right-4 z-12 rounded-lg bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover:shadow-hover-lg transition-all hover:scale-110`,
@@ -6,19 +7,13 @@ const css = {
 };
 
 const WhatsAppButton = () => {
-  const handleWhatsApp = () => {
-    const phone = "553484125832";
-    const message =
-      "Olá! Gostaria de saber mais sobre os serviços do Pet Shop.";
-    window.open(
-      `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
-      "_blank"
-    );
-  };
-
   return (
     <Button
-      onClick={handleWhatsApp}
+      onClick={() =>
+        openWhatsApp(
+          "Olá! Gostaria de saber mais sobre os serviços do Pet Shop."
+        )
+      }
       size="lg"
       className={css.button}
       aria-label="Contato via WhatsApp"
