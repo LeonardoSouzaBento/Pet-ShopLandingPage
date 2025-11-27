@@ -19,8 +19,8 @@ const Footer = () => {
           title="Endereço"
         >
           <>
-            Rua Exemplo, 123 – Centro <br />
-            Sua Cidade
+            Rua Itapecerica, 123 – Centro <br />
+            Itapecerica
           </>
         </ContactInfoItem>
 
@@ -29,7 +29,7 @@ const Footer = () => {
           iconSize="21px"
           title="Contato"
         >
-          (XX) XXXXX-XXXX
+          (34) 98412-5832
         </ContactInfoItem>
 
         <ContactInfoItem
@@ -49,7 +49,7 @@ const Footer = () => {
         <p className={`font-extralight text-amber-50/80`}>
           © {currentYear} O Melhor Pet Shop. Todos os direitos reservados.
         </p>
-        <p className={`mt-2 font-extralight text-amber-50/80`}>CNPJ: XX.XXX.XXX/XXXX-XX</p>
+        <p className={`mt-2 font-extralight text-amber-50/80`}>CNPJ: 45.987.654/0001-22</p>
       </div>
     </footer>
   );

@@ -46,7 +46,7 @@ const teamMembers: TeamMember[] = [
 
 export default function Team() {
   return (
-    <Section variant="medium">
+    <Section variant="medium" className="relative z-2">
       <SectionHeader
         title="Quem somos"
       />

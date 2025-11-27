@@ -14,9 +14,9 @@ const ContactCardsList = () => {
             iconStyles="text-[25px]!"
             title="Endereço"
           >
-            Rua Exemplo, 123 – Centro
+            Rua Itapecerica, 123 – Centro
             <br />
-            Sua Cidade
+            Itapecerica
           </ContactCard>
 
           <ContactCard
@@ -24,7 +24,7 @@ const ContactCardsList = () => {
             iconStyles="text-[22.5px]!"
             title="Telefone / WhatsApp"
           >
-            (XX) XXXXX-XXXX
+            (34) 98412-5832
           </ContactCard>
         </div>
 

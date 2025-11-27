@@ -6,12 +6,14 @@ import Footer from "@/components/Footer/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ServicesSection from "@/components/Services/ServicesSection";
 import ContactSection from "@/components/Contact/ContactSection";
+import ServicesIntroduction from "@/components/ServicesIntroduction/ServicesIntroduction";
 
 const Index = () => {
   return (
     <div className={`min-h-screen`}>
       <Logo />
       <Hero />
+      <ServicesIntroduction />
       <ServicesSection />
       <Team />
       <ContactSection />

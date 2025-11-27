@@ -1,19 +1,9 @@
-import DecorativeBlob from "@/components/DecorativeBlob";
-import { SectionHeader } from "@/components/ui/section-header";
-import { DifferentialsList } from "./components/DifferentialsList";
-import { ServicesGrid } from "./components/ServicesGrid";
 import { Section } from "@/components/ui/Section";
-import {
-  Calendar,
-  Droplet,
-  Home,
-  Scissors,
-  Shield,
-  Sparkles,
-  Stethoscope,
-  Truck,
-} from "lucide-react";
+import { SectionHeader } from "@/components/ui/section-header";
+import { Droplet, Scissors, Stethoscope, Truck } from "lucide-react";
 import SectionWrapper from "../ui/SectionWrapper";
+import { ServicesGrid } from "./components/ServicesGrid";
+import DecorativeBlob from "../DecorativeBlob";
 
 export interface Service {
   icon: React.ElementType;
@@ -58,48 +48,12 @@ const services: Service[] = [
   },
 ];
 
-export interface Differential {
-  icon: React.ElementType;
-  title: string;
-  description: string;
-}
-
-const differentials: Differential[] = [
-  {
-    icon: Home,
-    title: "Ambiente acolhedor",
-    description: "Espaço pensado para o bem estar animal",
-  },
-  {
-    icon: Sparkles,
-    title: "Produtos de alta qualidade",
-    description: "Marcas reconhecidas e confiáveis",
-  },
-  {
-    icon: Calendar,
-    title: "Agendamentos flexíveis",
-    description: "Horários que se ajustam à sua rotina",
-  },
-  {
-    icon: Shield,
-    title: "Espaço seguro e higienizado",
-    description: "Mantemos o ambiente organizado e limpo",
-  },
-];
-
 export default function ServicesSection() {
   return (
-    <Section variant="light" className={`relative overflow-hidden`}>
-      <DecorativeBlob position="top-right" color="primary" size="lg" />
+    <Section variant="light" className={`relative overflow pt-0!`}>
       <DecorativeBlob position="bottom-left" color="secondary" size="md" />
 
-      <SectionHeader
-        title="O que nós oferecemos?"
-        subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz."
-        wrapperStyles="relative z-10"
-      />
       <SectionWrapper styles="lg:max-w-none">
-        <DifferentialsList differentials={differentials} />
         <SectionHeader title="Nossos serviços" />
         <ServicesGrid services={services} />
       </SectionWrapper>
