@@ -1,4 +1,5 @@
 import vetImage from "@/assets/woman-with-pet.png";
+// import teamImage from "@/assets/team.png"
 
 export function TeamImage() {
   return (
