@@ -15,7 +15,7 @@ const Hero = () => {
       <HeroBackground />
 
       <div className="relative z-6 section-container p-0 text-center text-white">
-        <div className={`max-w-4xl mx-auto space-y-6 slide-up px-2.5 mt-20`}>
+        <div className={`max-w-4xl mx-auto space-y-6 slide-up px-2.5 mt-19`}>
           <HeroTitle />
           <HeroButton />
         </div>

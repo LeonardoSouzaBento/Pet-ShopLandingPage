@@ -5,7 +5,7 @@ export function ServicesGrid({ services }: { services: Service[] }) {
   return (
     <div>
       <div
-        className={`mb-6 grid min-[520px]:grid-cols-2 lg:grid-cols-4 gap-6
+        className={`grid min-[520px]:grid-cols-2 lg:grid-cols-4 gap-6
       relative z-10 `}
       >
         {services.map((service, index) => (
