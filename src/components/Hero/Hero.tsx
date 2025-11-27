@@ -8,7 +8,7 @@ import {
 const Hero = () => {
   return (
     <section
-      className={`relative w-full h-[97vh] sm:h-[94vh] max-h-[920px]
+      className={`relative w-full h-[92vh] sm:h-[94vh] max-h-[920px]
         flex items-center justify-center overflow-hidden `}
     >
       <FloatingElements />
