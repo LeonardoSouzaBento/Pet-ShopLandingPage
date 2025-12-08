@@ -1,4 +1,4 @@
-# 📱 Acesso
+#Acesso
 
 https://leopetshop.netlify.app
 
