@@ -1,7 +1,5 @@
 import { ContactCardList, Map } from '@/components/contact-section/index';
-import { Section } from '@/ui/Section';
-import { SectionHeader } from '@/ui/section-header';
-import SectionWrapper from '@/ui/SectionWrapper';
+import { Section, SectionHeader, SectionWrapper } from '@/ui/index';
 
 const ContactSection = () => {
   return (

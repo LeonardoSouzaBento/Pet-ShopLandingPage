@@ -9,13 +9,10 @@
   /* Colors */
   --color-background: oklch(96.5% 0.01 85);
   --color-foreground: oklch(30% 0.03 210);
-
   --color-card: oklch(100% 0 0);
   --color-card-foreground: oklch(30% 0.03 210);
-
   --color-popover: oklch(100% 0 0);
   --color-popover-foreground: oklch(30% 0.03 210);
-
   --color-primary: oklch(50% 0.12 170);
   --color-primary-light: oklch(60% 0.11 185);
   --color-primary-foreground: oklch(100% 0 0);

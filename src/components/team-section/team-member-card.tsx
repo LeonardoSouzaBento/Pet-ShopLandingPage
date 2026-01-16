@@ -1,6 +1,5 @@
 'use client';
-import { Card, CardContent } from '@/ui/card';
-import { User } from 'lucide-react';
+import { Card, CardContent } from '@/ui/index';
 
 interface Props {
   name: string;

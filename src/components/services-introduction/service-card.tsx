@@ -1,4 +1,4 @@
-import { CardContent } from '@/ui/card';
+import { CardContent } from '@/ui/index';
 
 interface ServiceCardProps {
   icon: React.ElementType;

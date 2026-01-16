@@ -1,7 +1,5 @@
 import storeImage from '@/assets/store-front.jpg';
-import { SectionHeader } from '@/ui/section-header';
-import SectionWrapper from '../ui/SectionWrapper';
-import { Section } from '@/ui/Section';
+import { SectionHeader, SectionWrapper, Section } from '@/ui/index';
 
 const History = () => {
   return (

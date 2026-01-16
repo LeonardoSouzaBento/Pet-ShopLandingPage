@@ -1,10 +1,8 @@
 import DecorativeBlob from '@/components/others/decorative-blob';
-import { Section } from '@/ui/Section';
-import { SectionHeader } from '@/ui/section-header';
+import DifferentialsList from '@/components/services-introduction/differentials-list';
+import { Differential } from '@/types';
+import { SectionHeader, SectionWrapper, Section } from '@/ui/index';
 import { Calendar, Home, Shield, Sparkles } from 'lucide-react';
-import SectionWrapper from '../ui/SectionWrapper';
-import DifferentialsList from './services-introduction/differentials-list';
-import { Differential } from '../types';
 
 const differentials: Differential[] = [
   {

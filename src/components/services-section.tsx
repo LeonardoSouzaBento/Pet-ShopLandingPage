@@ -1,7 +1,7 @@
-import { Section } from '@/ui/Section';
+import { Section } from '@/ui/section_';
 import { SectionHeader } from '@/ui/section-header';
 import { Droplet, Scissors, Stethoscope, Truck } from 'lucide-react';
-import SectionWrapper from '../ui/SectionWrapper';
+import { SectionWrapper } from '../ui/section-wrapper';
 import { ServicesGrid } from './services-section/services-grid';
 import DecorativeBlob from './others/decorative-blob';
 import type { Service } from '@/types';
