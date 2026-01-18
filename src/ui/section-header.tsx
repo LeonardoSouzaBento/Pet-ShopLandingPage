@@ -13,7 +13,7 @@ export const SectionHeader = ({
 }: SectionHeaderProps) => {
   return (
     <div className={`text-center mb-10 fade-in ${wrapperStyles}`}>
-      <h3 className={`text-brown px-3.5`}>{title}</h3>
+      <h3 className={`text-card-foreground px-3.5`}>{title}</h3>
 
       {subtitle && (
         <h5

@@ -22,18 +22,18 @@
   --spacing-cap-offset: calc(1cap - ((1em - 1cap) / 2));
   --spacing-ex-offset: calc(1ex - ((1em - 1cap) / 2));
   /* Colors */
-  --color-primary-50: #ecf4f0;
-  --color-primary-100: #dae8e2;
-  --color-primary-200: #b6d2c6;
-  --color-primary-300: #91bcaa;
-  --color-primary-400: #6da68f;
-  --color-primary-500: #469175;
-  --color-primary-600: #007859 /*Sua cor*/;
-  --color-primary-700: #006043;
-  --color-primary-800: #00462b;
-  --color-primary-900: #002d15;
-  --color-primary-950: #002406;
-  --color-primary-1000: #001c00;
+--color-primary-50:#ECF4F0;
+--color-primary-100:#DAE8E2;
+--color-primary-200:#B6D2C6;
+--color-primary-300:#91BCAA;
+--color-primary-400:#6DA68F;
+--color-primary-500:#469175;
+--color-primary-600: hsl(165, 100%, 24%)/*Sua cor*/;
+--color-primary-700:#006043;
+--color-primary-800:#00462B;
+--color-primary-900:#002D15;
+--color-primary-950:#002406;
+--color-primary-1000:#001C00;
   --color-background: oklch(96.5% 0.01 85);
   --color-foreground: oklch(30% 0.03 210);
   --color-card: oklch(100% 0 0);
@@ -43,16 +43,27 @@
   --color-primary-light: oklch(60% 0.11 185);
   --color-primary-foreground: oklch(100% 0 0);
   --color-primary-soft: oklch(50% 0.12 170 / 0.15);
-  --color-secondary: oklch(68% 0.18 75);
+  --color-secondary: #e69d49;
   --color-secondary-light: oklch(75% 0.16 55);
   --color-secondary-foreground: oklch(100% 0 0);
+  --color-secondary-50: #fff2e8;
+  --color-secondary-100: #fee6d1;
+  --color-secondary-200: #f9cda3;
+  --color-secondary-300: #f1b577;
+  --color-secondary-400: #e69d49;
+  --color-secondary-500: #d78300; /*Secondary*/
+  --color-secondary-600: #b66800;
+  --color-secondary-700: #914a00;
+  --color-secondary-800: #6f2e00;
+  --color-secondary-900: #521000;
+  --color-secondary-950: #460000;
+  --color-secondary-1000: #3d0000;
   /* cores neutras */
-  --color-card-foreground: hsl(120 15% 18.5%);
-  --color-muted-foreground: hsl(120 8% 40%);
-  --color-border: hsl(120 5% 85%);
-  --color-input-border: hsl(120 8% 69.9%);
-  --color-input-bg: hsl(120 4% 97.1%);
-  --color-brown: oklch(28% 0.03 40);
+  --color-card-foreground: hsl(0 15% 18.5%);
+  --color-muted-foreground: hsl(0 8% 40%);
+  --color-border: hsl(0 5% 85%);
+  --color-input-border: hsl(0 8% 69.9%);
+  --color-input-bg: hsl(0 4% 97.1%);
 
   --color-muted: oklch(94% 0.01 210);
   --color-accent: oklch(95% 0.04 85);
@@ -62,8 +73,8 @@
   --color-destructive-foreground: oklch(100% 0 0);
   --color-ring: oklch(50% 0.12 185);
 
-  --color-hero-from: oklch(48% 0.13 185);
-  --color-hero-to: oklch(40% 0.12 185);
+  --color-hero-from: hsla(168, 100%, 23%, 0.95);
+  --color-hero-to: hsla(166, 100%, 18%, 0.85);
 
   --color-section-light: oklch(98% 0.01 85);
   --color-section-medium: oklch(96% 0.01 100);
@@ -113,8 +124,8 @@
     --gradient-secondary: linear-gradient(135deg, oklch(68% 0.18 55), oklch(75% 0.16 55));
     --gradient-hero: linear-gradient(
       135deg,
-      oklch(48% 0.13 185 / 0.95),
-      oklch(40% 0.12 185 / 0.85)
+      hsla(168, 100%, 23%, 0.95),
+      hsla(166, 100%, 18%, 0.85)
     );
     --gradient-card: linear-gradient(180deg, oklch(100% 0 0), oklch(97% 0.01 185));
   }

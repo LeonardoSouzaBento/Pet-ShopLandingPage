@@ -3,13 +3,13 @@ import { FloatingElements, HeroBackground, HeroButton, HeroTitle } from './hero/
 const Hero = () => {
   return (
     <section
-      className={`relative w-full min-h-[75dvh] max-h-max
+      className={`relative w-full min-h-110
         flex items-center justify-center overflow-hidden `}>
       <FloatingElements />
       <HeroBackground />
 
       <div className="relative z-6 section-container p-0 text-center text-white">
-        <div className={`max-w-4xl mx-auto slide-up px-3 py-10`}>
+        <div className={`max-w-4xl max-h-max mx-auto slide-up px-3 pt-6 pb-20 xl:pt-7`}>
           <HeroTitle />
           <HeroButton />
         </div>

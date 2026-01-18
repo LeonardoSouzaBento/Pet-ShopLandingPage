@@ -65,7 +65,7 @@ h3, h2 {
 }
 
 h1, strong { 
-  @apply font-bold tracking-[0.025em]; 
+  @apply font-semibold tracking-[0.025em]; 
 } 
 
 /* -------- LINE HEIGHTS -------- */ 
