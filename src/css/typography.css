@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import "./globals.css";
+
+@layer components {
+  
+body {
+@apply text-[1.0875rem] sm:text-[1.112500rem] md:text-[1.1175rem] 
+lg:text-[1.1275rem] xl:text-[1.1375rem] 2xl:text-[1.1475rem];
+}
+
+.smaller-text {@apply text-xs;}
+
+.small-text, label {@apply text-sm;}
+
+.normal-text, li, input, select, option {@apply text-base;}
+
+.large-text {@apply text-lg;}
+
+h6 {@apply text-h6;}
+
+h5 {@apply text-h5;}
+
+h4 {@apply text-h4;}
+
+h3 {@apply text-h3;}
+
+h2 {@apply text-h2;}
+
+h1 {@apply text-h1;}
+
+button {@apply text-button;}
+
+.small-button {@apply text-sm-button;}
+
+.large-button {@apply text-lg-button;}
+
+/* -------- LARGURAS DO CORPO -------- */ 
+p { 
+  @apply max-w-[65ch] sm:max-w-[73ch] 
+  md:max-w-[75ch] lg:max-w-[78ch] xl:max-w-[82ch] 
+  2xl:max-w-[85ch]; 
+}
+
+/* -------- PESOS -------- */
+input::placeholder, .helper-text, 
+.description-text { 
+  @apply font-light; 
+} 
+
+p, li, input, select, option { 
+  @apply font-medium; 
+} 
+
+a, h6, h5, h4 { 
+  @apply font-medium; 
+}
+
+button, label, .small-button, 
+.big-link, .small-link { 
+  @apply font-bold; 
+} 
+
+h3, h2 { 
+  @apply font-semibold; 
+}
+
+h1, strong { 
+  @apply font-bold tracking-[0.025em]; 
+} 
+
+/* -------- LINE HEIGHTS -------- */ 
+h1 { @apply leading-[1.22]; } 
+h2 { @apply leading-[1.24]; } 
+h3 { @apply leading-[1.28]; } 
+h4 { @apply leading-[1.32]; } 
+h5 { @apply leading-[1.38]; } 
+h6 { @apply leading-[1.44]; } 
+
+p, li, input, select, option { 
+  @apply leading-[1.52]; 
+} 
+
+label { @apply leading-[1.35];} 
+
+button { 
+  @apply leading-[1.15]; 
+} 
+
+.large-text { @apply leading-[1.68]; } 
+.normal-text { @apply leading-normal; } 
+.small-text { @apply leading-[1.6]; } 
+.smaller-text { @apply leading-normal; } 
+
+.large-button { @apply leading-[1.20]; } 
+.small-button { @apply leading-[1.10]; } 
+}

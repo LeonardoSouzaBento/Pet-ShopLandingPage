@@ -1,39 +1,65 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  /* Font Family */
-  --font-display: "Fredoka", sans-serif;
-  --font-sans: "Fredoka", sans-serif;
-  --font-body: "Nunito", sans-serif;
+  /* Fontes */
+  --font-title: 'Fredoka', sans-serif;
+  --font-body: 'Nunito', sans-serif;
 
+  /*font-sizes*/
+  --text-xs: 0.694444em;
+  --text-sm: 0.833333em;
+  --text-base: 1em;
+  --text-lg: 1.2em;
+  --text-h6: 1.2em;
+  --text-h5: 1.44em;
+  --text-h4: 1.728em;
+  --text-h3: 2.0736em;
+  --text-h2: 2.48832em;
+  --text-h1: 2.985984em;
+  --text-sm-button: 0.8333em;
+  --text-button: 0.913em;
+  --text-lg-button: 1em;
+  --spacing-cap-offset: calc(1cap - ((1em - 1cap) / 2));
+  --spacing-ex-offset: calc(1ex - ((1em - 1cap) / 2));
   /* Colors */
+  --color-primary-50: #ecf4f0;
+  --color-primary-100: #dae8e2;
+  --color-primary-200: #b6d2c6;
+  --color-primary-300: #91bcaa;
+  --color-primary-400: #6da68f;
+  --color-primary-500: #469175;
+  --color-primary-600: #007859 /*Sua cor*/;
+  --color-primary-700: #006043;
+  --color-primary-800: #00462b;
+  --color-primary-900: #002d15;
+  --color-primary-950: #002406;
+  --color-primary-1000: #001c00;
   --color-background: oklch(96.5% 0.01 85);
   --color-foreground: oklch(30% 0.03 210);
   --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(30% 0.03 210);
   --color-popover: oklch(100% 0 0);
   --color-popover-foreground: oklch(30% 0.03 210);
-  --color-primary: oklch(50% 0.12 170);
+  --color-primary: #007859;
   --color-primary-light: oklch(60% 0.11 185);
   --color-primary-foreground: oklch(100% 0 0);
   --color-primary-soft: oklch(50% 0.12 170 / 0.15);
   --color-secondary: oklch(68% 0.18 75);
   --color-secondary-light: oklch(75% 0.16 55);
   --color-secondary-foreground: oklch(100% 0 0);
-
+  /* cores neutras */
+  --color-card-foreground: hsl(120 15% 18.5%);
+  --color-muted-foreground: hsl(120 8% 40%);
+  --color-border: hsl(120 5% 85%);
+  --color-input-border: hsl(120 8% 69.9%);
+  --color-input-bg: hsl(120 4% 97.1%);
   --color-brown: oklch(28% 0.03 40);
 
   --color-muted: oklch(94% 0.01 210);
-  --color-muted-foreground: oklch(55% 0.02 210);
-
   --color-accent: oklch(95% 0.04 85);
   --color-accent-foreground: oklch(30% 0.03 210);
 
   --color-destructive: oklch(60% 0.22 25);
   --color-destructive-foreground: oklch(100% 0 0);
-
-  --color-border: oklch(92% 0.01 210);
-  --color-input: oklch(92% 0.01 210);
   --color-ring: oklch(50% 0.12 185);
 
   --color-hero-from: oklch(48% 0.13 185);
@@ -55,19 +81,14 @@
   --radius-2xl: 1.5rem;
 
   /* Shadows */
-  --shadow-xs: 0 2px 8px oklch(30% 0.03 210 / 0.06);
-  --shadow-sm: 0 4px 16px oklch(30% 0.03 210 / 0.08);
-  --shadow-md: 0 8px 24px oklch(30% 0.03 210 / 0.1);
-  --shadow-lg: 0 12px 32px oklch(30% 0.03 210 / 0.12);
-  --shadow-xl: 0 16px 40px oklch(30% 0.03 210 / 0.14);
-  --shadow-primary: 0 8px 24px oklch(50% 0.12 185 / 0.15);
-  --shadow-secondary: 0 8px 24px oklch(68% 0.18 55 / 0.15);
-  --shadow-hover-xs: 0 4px 12px oklch(30% 0.03 210 / 0.1);
-  --shadow-hover-sm: 0 6px 20px oklch(30% 0.03 210 / 0.12);
-  --shadow-hover-md: 0 12px 32px oklch(30% 0.03 210 / 0.14);
-  --shadow-hover-lg: 0 16px 40px oklch(30% 0.03 210 / 0.16);
-  --shadow-hover-primary: 0 12px 32px oklch(50% 0.12 185 / 0.25);
-  --shadow-hover-secondary: 0 12px 32px oklch(68% 0.18 55 / 0.25);
+  --shadow-xs: 0 2px 8px oklch(36% 0.03 210 / 0.045);
+  --shadow-sm: 0 4px 16px oklch(36% 0.03 210 / 0.06);
+  --shadow-md: 0 8px 24px oklch(36% 0.03 210 / 0.075);
+  --shadow-lg: 0 12px 32px oklch(36% 0.03 210 / 0.09);
+  --shadow-xl: 0 16px 40px oklch(36% 0.03 210 / 0.105);
+
+  --shadow-primary: 0 8px 24px oklch(56% 0.12 185 / 0.12);
+  --shadow-secondary: 0 8px 24px oklch(72% 0.18 55 / 0.12);
 
   /* Breakpoints */
   --breakpoint-sm: 40rem;
@@ -88,26 +109,14 @@
 
 @layer base {
   :root {
-    --gradient-primary: linear-gradient(
-      135deg,
-      oklch(50% 0.12 185),
-      oklch(60% 0.11 185)
-    );
-    --gradient-secondary: linear-gradient(
-      135deg,
-      oklch(68% 0.18 55),
-      oklch(75% 0.16 55)
-    );
+    --gradient-primary: linear-gradient(135deg, oklch(50% 0.12 185), oklch(60% 0.11 185));
+    --gradient-secondary: linear-gradient(135deg, oklch(68% 0.18 55), oklch(75% 0.16 55));
     --gradient-hero: linear-gradient(
       135deg,
       oklch(48% 0.13 185 / 0.95),
       oklch(40% 0.12 185 / 0.85)
     );
-    --gradient-card: linear-gradient(
-      180deg,
-      oklch(100% 0 0),
-      oklch(97% 0.01 185)
-    );
+    --gradient-card: linear-gradient(180deg, oklch(100% 0 0), oklch(97% 0.01 185));
   }
 }
 
@@ -126,41 +135,22 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-size: 1.08125em;
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     @apply text-[1.08125em] sm:text-[1.09772em] md:text-[1.10568em] 
     lg:text-[1.12159em] xl:text-[1.13750em] 2xl:text-[1.15341em];
   }
 
-  div {
-    border-radius: var(--radius-2xl);
-  }
-
-  h1 {
-    font-weight: 600;
-    font-size: 2.31214em;
-    letter-spacing: 0.025em;
-  }
-
-  h2 {
-    font-size: 1.84971em;
-    line-height: 1.25;
-  }
-
-  h3 {
-    @apply text-[1.15606em] font-semibold tracking-normal;
-  }
-
-  p {
-    @apply text-card-foreground;
-    font-weight: 400;
-    font-family: var(--font-body);
-  }
-
+  h1,
   h2,
+  h3,
   h4,
   h5,
   h6 {
-    @apply font-semibold text-card-foreground;
+    font-family: var(--font-title);
+  }
+
+  div {
+    border-radius: var(--radius-2xl);
   }
 
   .section-container {
@@ -268,5 +258,9 @@
 }
 
 .material-symbols-rounded {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }

@@ -13,18 +13,18 @@ export const SectionHeader = ({
 }: SectionHeaderProps) => {
   return (
     <div className={`text-center mb-10 fade-in ${wrapperStyles}`}>
-      <h2 className={`text-brown mb-4 px-3.5`}>{title}</h2>
+      <h3 className={`text-brown px-3.5`}>{title}</h3>
 
       {subtitle && (
-        <p
-          className={`text-xl text-muted-foreground max-w-2xl mx-auto px-3.5 ${subtitleStyles}`}
+        <h5
+          className={`text-muted-foreground max-w-2xl mx-auto pt-0.5 px-6 ${subtitleStyles}`}
         >
           {subtitle}
-        </p>
+        </h5>
       )}
 
       <div
-        className={`w-24 h-1 bg-muted-foreground mx-auto rounded-full mt-6`}
+        className={`w-24 h-1 bg-primary-300 mx-auto rounded-full mt-6`}
       />
     </div>
   );

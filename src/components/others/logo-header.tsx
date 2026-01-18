@@ -4,9 +4,7 @@ export default function LogoHeader() {
   return (
     <>
       <div
-        className={` ${wrapperCSS} absolute top-0 left-0 
-            bg-linear-to-b from-[#1E7265] to-[#136c6059]
-          `}>
+        className={` ${wrapperCSS} bg-linear-to-r from-hero-from to-hero-to`}>
         <div className={`flex flex-col items-center gap-1 h-full w-auto overflow-hidden`}>
           <img
             src="/shop-logo.png"
