@@ -15,7 +15,7 @@ export function Section({ children, className, variant = "light" }: SectionProps
   }[variant];
 
   return (
-    <section className={cn("py-10 px-3 sm:px-6 md:px-8 lg:px-12", bgClass, className)}>
+    <section className={cn("pt-6 pb-8 px-3 sm:px-6 md:px-8 lg:px-12", bgClass, className)}>
       {children}
     </section>
   );

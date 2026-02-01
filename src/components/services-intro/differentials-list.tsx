@@ -6,7 +6,7 @@ export default function DifferentialsList({ differentials }: { differentials: Di
   return (
     <div
       className={`p-8 bg-white shadow-md hover:shadow-lg grid 
-        lg:grid-cols-[auto_402px] lg:gap-8 xl:grid-cols-[auto_420px] 
+        lg:grid-cols-[auto_402px] lg:gap-6 xl:grid-cols-[auto_420px] 
         transition-all duration-200`}>
       <div
         className={`sm:mb-6 lg:mb-0 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1

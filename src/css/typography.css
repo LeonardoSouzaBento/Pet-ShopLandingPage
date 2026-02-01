@@ -69,12 +69,13 @@ h1, strong {
 } 
 
 /* -------- LINE HEIGHTS -------- */ 
-h1 { @apply leading-[1.22]; } 
-h2 { @apply leading-[1.24]; } 
-h3 { @apply leading-[1.28]; } 
-h4 { @apply leading-[1.32]; } 
-h5 { @apply leading-[1.38]; } 
-h6 { @apply leading-[1.44]; } 
+h1 { @apply leading-[1.08]; }
+h2 { @apply leading-[1.12]; }
+h3 { @apply leading-[1.18]; }
+h4 { @apply leading-[1.24]; }
+h5 { @apply leading-[1.30]; }
+h6 { @apply leading-[1.36]; }
+
 
 p, li, input, select, option { 
   @apply leading-[1.52]; 
