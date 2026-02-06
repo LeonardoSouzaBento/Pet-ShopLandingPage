@@ -6,3 +6,5 @@ export * from './section_';
 export * from './separator';
 export * from './sonner';
 export * from './toast';
+export * from './icon';
+

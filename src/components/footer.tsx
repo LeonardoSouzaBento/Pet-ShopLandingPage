@@ -11,7 +11,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={`${css.footer} bg-linear-to-br from-hero-from to-primary-800`}>
+    <footer className={`${css.footer} bg-linear-to-br from-hero-from to-primary-900`}>
       <div className={css.container}>
         <ContactInfoItem icon="home_pin" title="Endereço">
           <>

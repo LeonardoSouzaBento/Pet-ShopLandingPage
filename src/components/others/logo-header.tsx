@@ -1,16 +1,20 @@
-const wrapperCSS = `w-full h-24 flex items-center justify-center rounded-none z-8`;
-
 export default function LogoHeader() {
   return (
     <>
       <div
-        className={` ${wrapperCSS} bg-linear-to-br from-hero-from to-hero-to`}>
-        <div className={`flex flex-col items-center gap-1 h-full w-auto overflow-hidden`}>
-          <img
-            src="/shop-logo.png"
-            alt="imagem da logo da loja"
-            className={`size-full object-contain mr-px mt-1.5`}
-          />
+        className={`w-full h-24 flex items-center justify-center rounded-none z-8 
+        bg-linear-to-br from-hero-from to-hero-to`}>
+        <div className={`flex items-center gap-2.5`}>
+          <div className={`size-14 p-0.5 shrink-0 bg-secondary-800/6 rounded-xl`}>
+            <img
+              src="/logo.png"
+              alt="imagem da logo da loja"
+              className={`size-full object-contain brightness-110`}
+            />
+          </div>
+          <p className={`font-bold font-title text-white/86 leading-[1.06] text-h5 tracking-wide`}>
+            Leo <br /> Pet Shop
+          </p>
         </div>
       </div>
     </>

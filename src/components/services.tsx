@@ -42,7 +42,7 @@ export default function ServicesSection() {
     <Section variant="light" className={`relative overflow pt-0!`}>
       <DecorativeBlob position="bottom-left" color="secondary" size="md" />
 
-      <SectionWrapper styles="lg:max-w-none">
+      <SectionWrapper className="lg:max-w-none">
         <SectionHeader title="Nossos serviços" />
         <ServicesGrid services={services} />
       </SectionWrapper>

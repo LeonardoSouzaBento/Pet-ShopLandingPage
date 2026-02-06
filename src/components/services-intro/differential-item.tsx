@@ -1,5 +1,8 @@
+import { Icon } from '@/ui/index';
+import type { LucideIcon } from 'lucide-react';
+
 interface DifferentialItemProps {
-  icon: React.ElementType;
+  icon: LucideIcon;
   title: string;
   delay: number;
   yellowStyle?: boolean;
@@ -7,36 +10,34 @@ interface DifferentialItemProps {
 }
 
 const css = {
-  wrapper: `pr-5 pl-2 py-2 px-2 md:py-3 flex lg:items-center gap-4
-  lg:h-22 xl:flex-row xl:py-0 hover:shadow-sm border 
+  wrapper: `p-4 flex gap-3 hover:shadow-sm border 
   transition-all duration-200 rounded-xl`,
-  wrapperIcon: `shrink-0 size-12 relative rounded-full flex items-center justify-center`,
-  containerText: `h-full flex flex-col gap-1 items-start justify-center`,
-  title: `text-card-foreground`,
-  description: `text-card-foreground/75 leading-tight pb-1`,
+  header: `flex items-center gap-3 mb-2`,
+  iconWrapper: `shrink-0 size-12 relative rounded-lg flex items-center justify-center`,
+  title: `text-card-foreground mb-1`,
+  description: `text-card-foreground/75 leading-tight`,
 };
 
 export default function DifferentialItem({
-  icon: Icon,
+  icon: IconComponent,
   title,
   delay,
   yellowStyle = true,
   description,
 }: DifferentialItemProps) {
+  const iconColor = yellowStyle ? 'text-primary-600 bg-primary-50/75' : 'text-secondary-500 bg-secondary-50/75';
   return (
     <div
       className={`${css.wrapper} ${yellowStyle ? 'border-primary/25' : 'border-secondary/25'}`}
       style={{ animationDelay: `${delay}s` }}>
-      <div className={`${css.wrapperIcon} ${!yellowStyle ? 'bg-secondary/10' : 'bg-primary/10'}`}>
-        <Icon
-          strokeWidth={2.4}
-          className={`size-5.5 ${yellowStyle ? 'text-primary' : 'text-secondary'}`}
-        />
+      <div className="h-full">
+        <div className={`${css.iconWrapper} ${iconColor}`}>
+          <Icon Icon={IconComponent} size="xl" strokeWidth="thin" />
+        </div>
       </div>
-
-      <div className={css.containerText}>
+      <div className="-mt-1">
         <h6 className={css.title}>{title}</h6>
-        <p className={css.description}>{description}</p>
+        <p className={css.description}>{description}.</p>
       </div>
     </div>
   );

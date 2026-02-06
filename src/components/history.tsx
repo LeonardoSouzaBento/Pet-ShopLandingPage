@@ -4,8 +4,8 @@ import { SectionHeader, SectionWrapper, Section } from '@/ui/index';
 const History = () => {
   return (
     <Section variant="medium">
-      <SectionHeader title="Nossa história" />
-      <SectionWrapper styles="grid xl:grid-cols-2 gap-12 lg:max-w-3xl! xl:max-w-6xl! items-center">
+      <SectionHeader title="Nossa história" cssWrapper="mb-6" />
+      <SectionWrapper className="grid xl:grid-cols-2 gap-8 xl:gap-7 max-w-2xl xl:max-w-5xl items-center">
         {/* Image */}
         <div className={`order-2 lg:order-2 fade-in`}>
           <div className={`rounded-xl overflow-hidden shadow-xl`}>
@@ -21,11 +21,11 @@ const History = () => {
         {/* Text Content */}
         <div className={`space-y-6 fade-in`}>
           <div
-            className={`px-5 space-y-4 text-muted-foreground 
-            text-center font-semibold`}>
+            className={`px-5 sm:px-0 space-y-4 text-muted-foreground 
+            font-semibold`}>
             <p>
-              Fundado em 2012, o O Melhor Pet Shop começou com uma equipe pequena e estrutura
-              básica, atendendo principalmente banho e tosa.
+              Fundado em 2012, o Leo Pet Shop começou com uma equipe pequena e estrutura básica,
+              atendendo principalmente banho e tosa.
             </p>
 
             <p>

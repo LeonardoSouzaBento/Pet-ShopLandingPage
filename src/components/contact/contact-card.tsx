@@ -32,8 +32,8 @@ const ContactCard = ({
       </div>
 
       <div>
-        <h6 className={`text-card-foreground mb-1`}>{title}</h6>
-        <p>{children}</p>
+        <h6 className={`text-muted-foreground mb-1 text-sm font-medium uppercase`}>{title}</h6>
+        <p className="text-lg font-bold leading-tight text-primary-900">{children}</p>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
+import type { LucideIcon } from 'lucide-react';
+
 export interface Differential {
-  icon: React.ElementType;
+  icon: LucideIcon;
   title: string;
   description: string;
 }

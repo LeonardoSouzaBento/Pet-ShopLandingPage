@@ -11,7 +11,7 @@ const css = {
   xl:rounded-full hover:shadow-md border rounded-lg transition-all duration-200`,
   containerIcon: `shrink-0 size-16 relative`,
   /* Icone */
-  wrapperIcon: `size-full rounded-full flex items-center justify-center 
+  iconWrapper: `size-full rounded-full flex items-center justify-center 
   absolute -top-4 -left-4`,
   containerText: `h-full flex flex-col items-start justify-center`,
   /* Titulo */
@@ -30,22 +30,13 @@ export function DifferentialItem({
 }: DifferentialItemProps) {
   return (
     <div
-      className={`${css.wrapper} ${
-        yellowStyle ? "border-primary/25" : "border-secondary/25"
-      }`}
-      style={{ animationDelay: `${delay}s` }}
-    >
+      className={`${css.wrapper} ${yellowStyle ? 'border-primary/25' : 'border-secondary/25'}`}
+      style={{ animationDelay: `${delay}s` }}>
       <div className={css.containerIcon}>
-        <div
-          className={`${css.wrapperIcon} ${
-            !yellowStyle ? "bg-secondary/10" : "bg-primary/10"
-          }`}
-        >
+        <div className={`${css.iconWrapper} ${!yellowStyle ? 'bg-secondary/10' : 'bg-primary/10'}`}>
           <Icon
             strokeWidth={2.4}
-            className={`w-6 h-6 ${
-              yellowStyle ? "text-primary" : "text-secondary"
-            }`}
+            className={`w-6 h-6 ${yellowStyle ? 'text-primary' : 'text-secondary'}`}
           />
         </div>
       </div>

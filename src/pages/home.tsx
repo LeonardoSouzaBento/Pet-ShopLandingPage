@@ -10,7 +10,7 @@ import {
 } from '@/components/index';
 import WhatsAppButton from '@/components/others/whatsapp-button';
 
-const Index = () => {
+const Home = () => {
   return (
     <div className={`min-h-screen`}>
       <LogoHeader />
@@ -26,4 +26,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;

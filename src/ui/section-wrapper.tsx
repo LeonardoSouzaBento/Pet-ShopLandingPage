@@ -1,13 +1,19 @@
-import React, { ReactNode } from "react";
+import { cn } from '@/lib/utils';
+import React, { ReactNode } from 'react';
 
 interface Props {
-  styles?: string;
+  className?: string;
   children: ReactNode;
 }
 
-export function SectionWrapper({ styles = "", children }: Props) {
+export function SectionWrapper({ className = '', children }: Props) {
   return (
-    <div className={`mx-auto md:max-w-[720px] lg:max-w-none xl:max-w-[1040px] ${styles}`}>
+    <div
+      className={cn(
+        `mx-auto md:max-w-180
+         lg:max-w-none xl:max-w-5xl`,
+        className,
+      )}>
       {children}
     </div>
   );

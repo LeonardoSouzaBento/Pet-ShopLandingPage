@@ -2,7 +2,7 @@ import { Button } from '@/ui/button';
 import { openWhatsApp } from '@/utils/whatsappUtils';
 
 const css = {
-  button: `size-13 p-0 fixed bottom-4 right-4 z-12 rounded-lg bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover: transition-all hover:scale-110`,
+  button: `size-14 p-0 fixed bottom-4.5 right-4.5 z-12 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white shadow-lg hover: transition-all hover:scale-110`,
   img: `size-7 pl-px pb-px`,
 };
 

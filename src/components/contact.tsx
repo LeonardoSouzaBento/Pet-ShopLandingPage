@@ -6,7 +6,7 @@ const ContactSection = () => {
     <Section variant="light">
       <SectionHeader title="Venha nos visitar" subtitle="Queremos você e seu pet" />
 
-      <SectionWrapper styles="grid lg:grid-cols-2 gap-6 xl:max-w-6xl!">
+      <SectionWrapper className="grid lg:grid-cols-2 gap-6 xl:max-w-6xl">
         <Map />
         <ContactCardList />
       </SectionWrapper>

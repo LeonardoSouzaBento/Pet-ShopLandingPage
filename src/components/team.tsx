@@ -16,25 +16,25 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Ana Paula',
     role: 'Groomer especializada',
-    experience: '4 anos de experiência, ama shih tzus e vira-latas',
+    experience: 'Quatro anos de experiência, ama shih tzus e vira-latas',
     image: woman1,
   },
   {
     name: 'Carlos Henrique',
     role: 'Esteticista de cães e gatos',
-    experience: '6 anos trabalhando com pets de todas as raças',
+    experience: 'Seis anos trabalhando com pets de todas as raças',
     image: man,
   },
   {
     name: 'Juliana Alves',
-    role: 'Atendimento e carinhos ilimitados',
+    role: 'Atendimente experiente',
     experience: 'Especialista em criar ambiente acolhedor para os pets',
     image: woman2,
   },
   {
     name: 'Dra. Sofia Mendes',
     role: 'Veterinária parceira',
-    experience: '10 anos de experiência em clínica veterinária',
+    experience: 'Dez anos de experiência em clínica veterinária',
     image: woman3,
   },
 ];

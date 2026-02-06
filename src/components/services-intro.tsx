@@ -34,10 +34,10 @@ export default function ServicesIntro() {
 
       <SectionHeader
         title="O que nós oferecemos?"
-        subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz."
-        wrapperStyles="relative z-10"
+        subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz"
+        cssWrapper="relative z-10"
       />
-      <SectionWrapper styles="lg:max-w-none">
+      <SectionWrapper className="lg:max-w-none">
         <DifferentialsList differentials={differentials} />
       </SectionWrapper>
     </Section>
