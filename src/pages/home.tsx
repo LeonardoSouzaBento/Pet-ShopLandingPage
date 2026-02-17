@@ -9,7 +9,7 @@ import {
   Footer,
 } from "@/components/index";
 import WhatsAppButton from "@/components/others/whatsapp-button";
-import { RowGrid } from "lines-overlay";
+// import { RowGrid } from "lines-overlay";
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
       <History />
       <Footer />
       <WhatsAppButton />
-      <RowGrid />
+      {/* <RowGrid /> */}
     </div>
   );
 };
