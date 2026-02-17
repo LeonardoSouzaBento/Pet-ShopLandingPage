@@ -8,7 +8,7 @@ interface DifferentialItemProps {
 
 const css = {
   wrapper: `pr-5 pl-2 py-2 px-2 md:py-3 flex max-[375px]:gap-0 gap-2 lg:items-center lg:h-22 xl:flex-row xl:py-0 
-  xl:rounded-full hover:shadow-md border rounded-lg transition-all duration-200`,
+  xl:rounded-full hover:shadow-sm border rounded-lg transition-all duration-200`,
   containerIcon: `shrink-0 size-16 relative`,
   /* Icone */
   iconWrapper: `size-full rounded-full flex items-center justify-center 
@@ -30,7 +30,7 @@ export function DifferentialItem({
 }: DifferentialItemProps) {
   return (
     <div
-      className={`${css.wrapper} ${yellowStyle ? 'border-primary/25' : 'border-secondary/25'}`}
+      className={`${css.wrapper}`}
       style={{ animationDelay: `${delay}s` }}>
       <div className={css.containerIcon}>
         <div className={`${css.iconWrapper} ${!yellowStyle ? 'bg-secondary/10' : 'bg-primary/10'}`}>

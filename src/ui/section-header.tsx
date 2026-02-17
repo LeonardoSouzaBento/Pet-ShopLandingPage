@@ -23,7 +23,7 @@ export const SectionHeader = ({
         </h5>
       )}
 
-      <div className={`w-24 h-1 bg-primary-300 mx-auto rounded-full mt-4`} />
+      <div className={`w-32 h-0.75 bg-primary-300 mx-auto rounded-full mt-4`} />
     </div>
   );
 };

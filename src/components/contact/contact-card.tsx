@@ -1,7 +1,9 @@
+import { Icon } from "@/ui";
+import type { LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
 interface ContactCardProps {
-  icon: string;
+  icon?: string;
   iconStyles?: string;
   title: string;
   children: ReactNode;

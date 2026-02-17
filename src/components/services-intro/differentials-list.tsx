@@ -5,7 +5,7 @@ import type { Differential } from '@/types';
 export default function DifferentialsList({ differentials }: { differentials: Differential[] }) {
   return (
     <div
-      className={`p-8 bg-white shadow-md hover:shadow-lg grid 
+      className={`p-8 grid 
         lg:grid-cols-[auto_402px] lg:gap-6 xl:grid-cols-[auto_420px] 
         transition-all duration-200`}>
       <div

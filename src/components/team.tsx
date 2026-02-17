@@ -48,7 +48,7 @@ export default function Team() {
         <div className={``}>
           <TeamGrid members={teamMembers} />
           <div
-            className={`lg:-order-1 grid gap-6
+            className={`lg:-order-1 grid gap-6 border border-border/24
             lg:grid-cols-[280px_auto] xl:grid-cols-[315px_auto] bg-white p-8 shadow-lg`}>
             <TeamImage />
             <TeamStats />

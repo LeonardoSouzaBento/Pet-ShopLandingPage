@@ -1,6 +1,6 @@
 const css = {
   container: `w-full box-border p-6 mx-auto flex items-center
-  lg:-order-1 lg:px-8 rounded-xl bg-section-medium/25 border`,
+  lg:-order-1 lg:px-8 rounded-xl bg-section-medium/50`,
 };
 
 export default function TeamStats() {

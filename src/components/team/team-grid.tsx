@@ -11,12 +11,12 @@ export default function TeamGrid({ members }: Props) {
       {members.map((member, index) => (
         <Card
           key={index}
-          className={`bg-white rounded-2xl border-none shadow-sm hover: 
-        transition-all duration-200 slide-up`}
+          className={`bg-white/96 rounded-2xl border-none shadow-xs hover:shadow-sm
+        transition-all duration-200 slide-up border border-border/16`}
           style={{ animationDelay: `${index * 0.1}s` }}>
           <CardContent className={`p-6`}>
             <div className={`flex gap-4 lg:flex-col`}>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center lg:justify-start">
                 <div
                   className={`size-24 rounded-full flex items-center justify-center
                   shadow-soft overflow-hidden relative shrink-0`}>
@@ -28,7 +28,7 @@ export default function TeamGrid({ members }: Props) {
                 </div>
               </div>
               <div className="-mt-1 flex flex-col items-start justify-center">
-                <h5 className='mb-1'>{member.name}</h5>
+                <h5 className='mb-1 tracking-tight'>{member.name}</h5>
                 <h6 className={`mb-2 text-muted-foreground leading-tight`}>{member.role}</h6>
                 <p className="hidden min-[375px]:inline-block text-muted-foreground sm:hidden lg:block">
                   {member.experience}.

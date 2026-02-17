@@ -10,8 +10,8 @@ interface DifferentialItemProps {
 }
 
 const css = {
-  wrapper: `p-4 flex gap-3 hover:shadow-sm border 
-  transition-all duration-200 rounded-xl`,
+  wrapper: `p-4 flex gap-3 hover:shadow-sm border border-border/40 
+  transition-all duration-200 rounded-xl bg-white/96`,
   header: `flex items-center gap-3 mb-2`,
   iconWrapper: `shrink-0 size-12 relative rounded-lg flex items-center justify-center`,
   title: `text-card-foreground mb-1`,
@@ -28,7 +28,7 @@ export default function DifferentialItem({
   const iconColor = yellowStyle ? 'text-primary-600 bg-primary-50/75' : 'text-secondary-500 bg-secondary-50/75';
   return (
     <div
-      className={`${css.wrapper} ${yellowStyle ? 'border-primary/25' : 'border-secondary/25'}`}
+      className={`${css.wrapper}`}
       style={{ animationDelay: `${delay}s` }}>
       <div className="h-full">
         <div className={`${css.iconWrapper} ${iconColor}`}>

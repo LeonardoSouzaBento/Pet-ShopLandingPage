@@ -9,7 +9,7 @@ export function DifferentialsList({ differentials }: { differentials: Differenti
         lg:grid-cols-[auto_402px] lg:gap-8 xl:grid-cols-[auto_420px] 
         transition-all duration-200`}>
       <div
-        className={`sm:mb-6 lg:mb-0 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-1
+        className={`sm:mb-6 lg:mb-0 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1
        rounded-2xl xl:grid-cols-1 order-2 sm:order-0 lg:order-2`}>
         {differentials.map((item, index) => (
           <DifferentialItem

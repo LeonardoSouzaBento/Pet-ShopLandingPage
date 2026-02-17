@@ -1,22 +1,23 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   /* Fontes */
-  --font-title: 'Fredoka', sans-serif;
-  --font-body: 'Nunito', sans-serif;
+  --font-title: "Fredoka", sans-serif;
+  --font-body: "Nunito", sans-serif;
   /*font-sizes*/
-  --text-xs: 0.694444em;
-  --text-sm: 0.833333em;
+  --text-xs: 0.64em;
+  --text-sm: 0.8em;
   --text-base: 1em;
-  --text-lg: 1.2em;
-  --text-h6: 1.2em;
-  --text-h5: 1.44em;
-  --text-h4: 1.728em;
-  --text-h3: 2.0736em;
-  --text-h2: 2.48832em;
-  --text-h1: 2.985984em;
-  --text-sm-button: 0.8333em;
-  --text-button: 0.913em;
+  --text-lg: 1.25em;
+  --text-h6: 1.25em;
+  --text-h5: 1.5625em;
+  --text-h4: 1.953125em;
+  --text-h3: 2.441406em;
+  --text-h2: 3.051758em;
+  --text-h1: 3.814697em;
+  --text-h1-hero: 4.768372em;
+  --text-button: 0.894427em;
+  --text-sm-button: 0.8em;
   --text-lg-button: 1em;
   --spacing-cap-offset: calc(1cap - ((1em - 1cap) / 2));
   --spacing-ex-offset: calc(1ex - ((1em - 1cap) / 2));
@@ -72,11 +73,11 @@
   --color-destructive-foreground: oklch(100% 0 0);
   --color-ring: hsl(174, 80%, 24%);
 
-  --color-hero-from: hsla(168, 80%, 23%, 0.95);
-  --color-hero-to: hsla(166, 80%, 18%, 0.85);
+  --color-hero-from: hsla(168, 60%, 23%, 0.92);
+  --color-hero-to: hsla(166, 60%, 18%, 0.85);
 
   --color-section-light: hsl(38, 55%, 97%);
-  --color-section-medium: hsl(48, 30%, 94%);
+  --color-section-medium: hsl(48, 30%, 95.5%);
 
   --color-footer-bg: #332402;
   --color-footer-bg-end: #1c1400;
@@ -110,10 +111,26 @@
 
 @layer base {
   :root {
-    --gradient-primary: linear-gradient(135deg, oklch(50% 0.12 185), oklch(60% 0.11 185));
-    --gradient-secondary: linear-gradient(135deg, oklch(68% 0.18 55), oklch(75% 0.16 55));
-    --gradient-hero: linear-gradient(135deg, var(--color-hero-from), var(--color-hero-to));
-    --gradient-card: linear-gradient(180deg, oklch(100% 0 0), oklch(97% 0.01 185));
+    --gradient-primary: linear-gradient(
+      135deg,
+      oklch(50% 0.12 185),
+      oklch(60% 0.11 185)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      oklch(68% 0.18 55),
+      oklch(75% 0.16 55)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      var(--color-hero-from),
+      var(--color-hero-to)
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      oklch(100% 0 0),
+      oklch(97% 0.01 185)
+    );
   }
 }
 
@@ -256,8 +273,8 @@
 
 .material-symbols-rounded {
   font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }

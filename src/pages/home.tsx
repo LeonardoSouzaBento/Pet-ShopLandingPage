@@ -7,12 +7,13 @@ import {
   ServicesSection,
   Team,
   Footer,
-} from '@/components/index';
-import WhatsAppButton from '@/components/others/whatsapp-button';
+} from "@/components/index";
+import WhatsAppButton from "@/components/others/whatsapp-button";
+import { RowGrid } from "lines-overlay";
 
 const Home = () => {
   return (
-    <div className={`min-h-screen`}>
+    <div>
       <LogoHeader />
       <Hero />
       <ServicesIntro />
@@ -22,6 +23,7 @@ const Home = () => {
       <History />
       <Footer />
       <WhatsAppButton />
+      <RowGrid />
     </div>
   );
 };

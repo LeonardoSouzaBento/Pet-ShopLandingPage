@@ -29,7 +29,7 @@ const differentials: Differential[] = [
 
 export default function ServicesIntro() {
   return (
-    <Section variant="light" className={`relative overflow-hidden`}>
+    <Section variant="light" className={`relative overflow-hidden pt-9.25`}>
       <DecorativeBlob position="top-right" color="primary" size="lg" />
 
       <SectionHeader
@@ -37,7 +37,7 @@ export default function ServicesIntro() {
         subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz"
         cssWrapper="relative z-10"
       />
-      <SectionWrapper className="lg:max-w-none">
+      <SectionWrapper className="lg:max-w-none border border-border/33 bg-white/75 shadow-md hover:shadow-lg">
         <DifferentialsList differentials={differentials} />
       </SectionWrapper>
     </Section>

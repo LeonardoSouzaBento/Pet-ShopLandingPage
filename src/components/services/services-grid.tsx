@@ -3,7 +3,7 @@ import { CardContent } from '@/ui/index';
 
 const css = {
   cardWrapper: `transition-all duration-200 slide-up relative rounded-2xl
-      text-card-foreground shadow-sm hover: bg-white`,
+      text-card-foreground bg-white/70 shadow-sm hover:shadow-md border border-border/25`,
   card: `p-7 pt-6 text-left bg-transparent`,
   header: `flex items-center gap-3 mb-3 border-b border-border/75 pb-3 rounded-none`,
   iconWrapper: `size-14 rounded-xl flex items-center justify-center 

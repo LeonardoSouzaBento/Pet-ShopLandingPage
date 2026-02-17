@@ -1,4 +1,4 @@
-import { Section } from '@/ui/section_';
+import { Section } from '@/ui/section';
 import { SectionHeader } from '@/ui/section-header';
 import { Droplet, Scissors, Stethoscope, Truck } from 'lucide-react';
 import { SectionWrapper } from '../ui/section-wrapper';
@@ -39,7 +39,7 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <Section variant="light" className={`relative overflow pt-0!`}>
+    <Section variant="light" className={`relative overflow pt-0`}>
       <DecorativeBlob position="bottom-left" color="secondary" size="md" />
 
       <SectionWrapper className="lg:max-w-none">

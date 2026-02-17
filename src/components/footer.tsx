@@ -2,8 +2,8 @@ import { ContactInfoItem } from './footer/contact-info-item';
 
 const css = {
   footer: `w-full  text-background`,
-  container: `max-w-max mx-auto px-2 py-4 pt-3.5 flex justify-start min-[540px]:justify-center 
-  min-[540px]:text-center flex-wrap lg:gap-4 sm:text-left`,
+  container: `max-w-max mx-auto px-4 pb-8 pt-7 flex justify-start min-[540px]:justify-center 
+  min-[540px]:text-center flex-wrap gap-8 sm:text-left`,
   icon: `size-5 shrink-0 mb-1`,
 };
 
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div
-        className={`w-full px-8 py-8 flex flex-col items-center border-t border-primary-50/16
+        className={`w-full px-8 py-6 flex flex-col items-center border-t border-primary-50/16
           text-primary-50/96 rounded-none small-text [&>p]:text-center 
           [&>p]:font-light`}>
         <p>© {currentYear} O Melhor Pet Shop. Todos os direitos reservados.</p>

@@ -22,7 +22,7 @@ export const ContactInfoItem = ({
   iconSize = "23px"
 }: ContactInfoItemProps) => {
   return (
-    <div className={`p-6`}>
+    <div>
       <div className={css.wrapper}>
         <span
           className={`material-symbols-rounded ${css.icon}`}
