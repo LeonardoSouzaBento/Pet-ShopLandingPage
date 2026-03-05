@@ -11,7 +11,7 @@ export function SectionWrapper({ className = '', children }: Props) {
     <div
       className={cn(
         `mx-auto md:max-w-180
-         lg:max-w-none xl:max-w-5xl`,
+         lg:max-w-none xl:max-w-5xl `,
         className,
       )}>
       {children}

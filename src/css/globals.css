@@ -163,10 +163,6 @@
     font-family: var(--font-title);
   }
 
-  div {
-    border-radius: var(--radius-2xl);
-  }
-
   .section-container {
     max-width: 80rem;
     margin-left: auto;

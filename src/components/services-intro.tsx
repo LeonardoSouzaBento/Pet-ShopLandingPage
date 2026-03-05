@@ -37,7 +37,7 @@ export default function ServicesIntro() {
         subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz"
         cssWrapper="relative z-10"
       />
-      <SectionWrapper className="lg:max-w-none border border-border/33 bg-white/75 shadow-md hover:shadow-lg">
+      <SectionWrapper className="lg:max-w-none border border-border/33 bg-white/75 shadow-md hover:shadow-lg rounded-2xl">
         <DifferentialsList differentials={differentials} />
       </SectionWrapper>
     </Section>
