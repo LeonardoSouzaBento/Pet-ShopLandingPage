@@ -15,15 +15,15 @@ export const SectionHeader = ({
 }: SectionHeaderProps) => {
   return (
     <div className={cn(`text-center mb-8 fade-in`, cssWrapper)}>
-      <h3 className={`text-card-foreground px-3.5`}>{title}</h3>
+      <h3 className={`text-primary-900 px-3.5`}>{title}</h3>
 
       {subtitle && (
-        <h5 className={cn(`text-muted-foreground max-w-2xl mx-auto pt-2 px-6`, cssSubtitle)}>
+        <h5 className={cn(`text-muted-foreground mx-auto pt-2 px-6`, cssSubtitle)}>
           {subtitle}
         </h5>
       )}
 
-      <div className={`w-32 h-0.75 bg-primary-300 mx-auto rounded-full mt-4`} />
+      <div className={`w-1/8 h-0.75 bg-primary-300 mx-auto rounded-full mt-4`} />
     </div>
   );
 };

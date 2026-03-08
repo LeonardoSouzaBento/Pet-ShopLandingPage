@@ -1,7 +1,7 @@
 import storeImage from '@/assets/store-front.jpg';
 import { SectionHeader, SectionWrapper, Section } from '@/ui/index';
 
-const History = () => {
+export const History = () => {
   return (
     <Section variant="medium">
       <SectionHeader title="Nossa história" cssWrapper="mb-6" />
@@ -43,5 +43,3 @@ const History = () => {
     </Section>
   );
 };
-
-export default History;

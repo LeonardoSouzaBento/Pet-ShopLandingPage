@@ -25,12 +25,12 @@ export const ContactInfoItem = ({
     <div>
       <div className={css.wrapper}>
         <span
-          className={`material-symbols-rounded ${css.icon}`}
+          className={`material-symbols-rounded ${css.icon} text-primary-50/80!`}
           style={{ fontSize: iconSize }}
         >
           {icon}
         </span>
-        <h6 className={`text-primary-50/98`}>{title}</h6>
+        <h6 className={`text-primary-50/80`}>{title}</h6>
       </div>
 
       <p className={`${css.description}`}>{children}</p>

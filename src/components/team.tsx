@@ -4,6 +4,7 @@ import woman2 from "@/assets/woman2.png";
 import woman3 from "@/assets/woman3.png";
 import { SectionHeader, SectionWrapper, Section } from "@/ui/index";
 import { TeamGrid, TeamImage, TeamStats } from "./team/index";
+import { PawIcon } from "./common";
 
 export interface TeamMember {
   name: string;
@@ -39,11 +40,22 @@ const teamMembers: TeamMember[] = [
   },
 ];
 
-export default function Team() {
+export function Team() {
   return (
     <Section variant="medium" className="relative z-2">
+      <PawIcon
+        position="top-left"
+        color="primary"
+        size="sm"
+        className="top-4 left-4"
+      />
+      <PawIcon
+        position="bottom-left"
+        color="primary"
+        size="md"
+        className="rotate-18"
+      />
       <SectionHeader title="Quem somos" />
-
       <SectionWrapper>
         <TeamGrid members={teamMembers} />
         <div

@@ -1,50 +1,50 @@
-import { Section } from '@/ui/section';
-import { SectionHeader } from '@/ui/section-header';
-import { Droplet, Scissors, Stethoscope, Truck } from 'lucide-react';
-import { SectionWrapper } from '../ui/section-wrapper';
-import { ServicesGrid } from './services/services-grid';
-import DecorativeBlob from './others/decorative-blob';
-import type { Service } from '@/types';
+import { PawIcon } from "@/components/common/paw-svg";
+import DifferentialsList from "@/components/services/differentials-list";
+import { Differential } from "@/types";
+import { Section, SectionHeader, SectionWrapper } from "@/ui/index";
+import { Calendar, Home, Shield, Sparkles } from "lucide-react";
+import { ServicesGrid } from "./services/services";
 
-const services: Service[] = [
+const differentials: Differential[] = [
   {
-    icon: Droplet,
-    title: 'Banho completo',
-    description: 'Higiene caprichada com produtos adequados para manter pele e pelos saudáveis',
-    color: 'text-primary',
-    bgColor: 'bg-primary/10',
+    icon: Home,
+    title: "Ambiente acolhedor",
+    description: "Espaço pensado para o bem estar animal",
   },
   {
-    icon: Scissors,
-    title: 'Tosa e estética',
-    description: 'Tosa na tesoura ou máquina, hidratação especial e finalização com estilo',
-    color: 'text-secondary',
-    bgColor: 'bg-secondary/10',
+    icon: Sparkles,
+    title: "Produtos de alta qualidade",
+    description: "Marcas reconhecidas e confiáveis",
   },
   {
-    icon: Stethoscope,
-    title: 'Cuidados veterinários',
-    description: 'Consultas preventivas, vacinas, exames básicos e orientações para seu pet',
-    color: 'text-primary',
-    bgColor: 'bg-primary/10',
+    icon: Calendar,
+    title: "Agendamentos flexíveis",
+    description: "Horários que se ajustam à sua rotina",
   },
   {
-    icon: Truck,
-    title: 'Transporte pet',
-    description: 'Coleta e entrega seguras com veículo preparado para conforto e tranquilidade',
-    color: 'text-secondary',
-    bgColor: 'bg-secondary/10',
+    icon: Shield,
+    title: "Espaço seguro e higienizado",
+    description: "Mantemos o ambiente organizado e limpo",
   },
 ];
 
-export default function ServicesSection() {
+export function Services() {
   return (
-    <Section variant="light" className={`relative overflow pt-0`}>
-      <DecorativeBlob position="bottom-left" color="secondary" size="md" />
+    <Section variant="light" className={`relative overflow-hidden pt-9.25`}>
+      <PawIcon position="top-right" color="primary" size="lg" />
+      <PawIcon position="top-left" color="secondary" size="sm" />
+      <PawIcon position="bottom-left" color="secondary" size="md" />
 
-      <SectionWrapper className="lg:max-w-none">
-        <SectionHeader title="Nossos serviços" />
-        <ServicesGrid services={services} />
+      <SectionHeader
+        title="O que oferecemos?"
+        subtitle="Tudo o que seu amigo precisa para ficar bonito, saudável e feliz"
+        cssWrapper="relative z-10"
+      />
+      <SectionWrapper className="lg:max-w-none border border-border/33 bg-white/75 shadow-md hover:shadow-lg rounded-2xl mb-6">
+        <DifferentialsList differentials={differentials} />
+      </SectionWrapper>
+      <SectionWrapper>
+        <ServicesGrid />
       </SectionWrapper>
     </Section>
   );

@@ -1,6 +1,6 @@
 import heroImage from "@/assets/dog-and-cat2.png";
 
-const HeroBackground = () => {
+export const HeroBackground = () => {
   return (
     <>
       <div className="absolute inset-0 z-0 rounded-none bg-black/11">
@@ -15,5 +15,3 @@ const HeroBackground = () => {
     </>
   );
 };
-
-export default HeroBackground;

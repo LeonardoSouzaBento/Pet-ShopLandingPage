@@ -1,7 +1,7 @@
-const HeroTitle = () => {
+export const HeroTitle = () => {
   return (
     <>
-      <h1 className="text-primary-50 px-6 mb-6">
+      <h1 className="text-primary-50 px-6 mb-8">
         Cuidamos do seu pet com carinho e alegria!
       </h1>
 
@@ -13,5 +13,3 @@ const HeroTitle = () => {
     </>
   );
 };
-
-export default HeroTitle;

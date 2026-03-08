@@ -1,5 +1,5 @@
-import type { TeamMember } from '../team.tsx';
-import { Card, CardContent } from '@/ui/card.tsx';
+import type { TeamMember } from "../team.tsx";
+import { Card, CardContent } from "@/ui/card.tsx";
 
 interface Props {
   members: TeamMember[];
@@ -11,15 +11,17 @@ export default function TeamGrid({ members }: Props) {
       {members.map((member, index) => (
         <Card
           key={index}
-          className={`bg-white/96 rounded-2xl border-none shadow-xs hover:shadow-sm
-        transition-all duration-200 slide-up border border-border/16`}
-          style={{ animationDelay: `${index * 0.1}s` }}>
+          className={`rounded-2xl border-none shadow-xs hover:shadow-sm
+        transition-all duration-200 slide-up border border-border/20 bg-linear-to-b from-white/50 via-white/75 to-white`}
+          style={{ animationDelay: `${index * 0.1}s` }}
+        >
           <CardContent className={`p-6`}>
             <div className={`flex gap-4 lg:flex-col`}>
-              <div className="flex items-center justify-center lg:justify-start">
+              <div className="flex items-center justify-center">
                 <div
-                  className={`size-24 rounded-full flex items-center justify-center
-                  shadow-soft overflow-hidden relative shrink-0`}>
+                  className={`size-28 rounded-full flex items-center justify-center
+                  shadow-soft overflow-hidden relative shrink-0`}
+                >
                   <img
                     src={member.image}
                     alt={member.name}
@@ -27,17 +29,27 @@ export default function TeamGrid({ members }: Props) {
                   />
                 </div>
               </div>
-              <div className="-mt-1 flex flex-col items-start justify-center">
-                <h5 className='mb-1 tracking-tight'>{member.name}</h5>
-                <h6 className={`mb-2 text-muted-foreground leading-tight`}>{member.role}</h6>
-                <p className="hidden min-[375px]:inline-block text-muted-foreground sm:hidden lg:block">
+              <div className="-mt-1 flex flex-col items-start justify-center lg:items-center">
+                <h5
+                  className="mb-1 tracking-tight leading-[1.2] text-primary-800 
+                capitalize lg:text-center"
+                >
+                  {member.name}
+                </h5>
+                <h6
+                  className={`mb-2 text-muted-foreground/90 leading-tight large-text capitalize lg:text-center`}
+                >
+                  {member.role}
+                </h6>
+                <p className="hidden min-[375px]:inline-block text-muted-foreground/80 sm:hidden lg:block lg:text-center">
                   {member.experience}.
                 </p>
               </div>
             </div>
             <p
               className="mt-3 inline-block min-[375px]:hidden sm:inline-block lg:hidden
-            text-muted-foreground">
+            text-muted-foreground"
+            >
               {member.experience}.
             </p>
           </CardContent>

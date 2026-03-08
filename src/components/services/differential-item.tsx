@@ -1,5 +1,8 @@
+import { Icon } from '@/ui/index';
+import type { LucideIcon } from 'lucide-react';
+
 interface DifferentialItemProps {
-  icon: React.ElementType;
+  icon: LucideIcon;
   title: string;
   delay: number;
   yellowStyle?: boolean;
@@ -7,42 +10,33 @@ interface DifferentialItemProps {
 }
 
 const css = {
-  wrapper: `pr-5 pl-2 py-2 px-2 md:py-3 flex max-[375px]:gap-0 gap-2 lg:items-center lg:h-22 xl:flex-row xl:py-0 
-  xl:rounded-full hover:shadow-sm border rounded-lg transition-all duration-200`,
-  containerIcon: `shrink-0 size-16 relative`,
-  /* Icone */
-  iconWrapper: `size-full rounded-full flex items-center justify-center 
-  absolute -top-4 -left-4`,
-  containerText: `h-full flex flex-col items-start justify-center`,
-  /* Titulo */
-  title: `text-card-foreground pb-px mb-1`,
-  /* Texto */
-  description: `text-card-foreground/75 mb-0.5`,
-  button: ``,
+  wrapper: `p-4 flex gap-3 hover:shadow-sm
+  transition-all duration-200 rounded-xl bg-white/96`,
+  header: `flex items-center gap-3 mb-2`,
+  iconWrapper: `shrink-0 size-12 relative rounded-lg flex items-center justify-center`,
+  title: `text-card-foreground mb-1`,
+  description: `text-card-foreground/75 leading-tight`,
 };
 
-export function DifferentialItem({
-  icon: Icon,
+export default function DifferentialItem({
+  icon: IconComponent,
   title,
   delay,
   yellowStyle = true,
   description,
 }: DifferentialItemProps) {
+  const iconColor = yellowStyle ? 'text-primary-600 bg-primary-50/75' : 'text-secondary-500 bg-secondary-50/75';
   return (
     <div
       className={`${css.wrapper}`}
       style={{ animationDelay: `${delay}s` }}>
-      <div className={css.containerIcon}>
-        <div className={`${css.iconWrapper} ${!yellowStyle ? 'bg-secondary/10' : 'bg-primary/10'}`}>
-          <Icon
-            strokeWidth={2.4}
-            className={`w-6 h-6 ${yellowStyle ? 'text-primary' : 'text-secondary'}`}
-          />
+      <div className="h-full">
+        <div className={`${css.iconWrapper} ${iconColor}`}>
+          <Icon Icon={IconComponent} size="xl" strokeWidth="thin" />
         </div>
       </div>
-
-      <div className={css.containerText}>
-        <h3 className={css.title}>{title}</h3>
+      <div className="-mt-1">
+        <h6 className={css.title}>{title}</h6>
         <p className={css.description}>{description}.</p>
       </div>
     </div>

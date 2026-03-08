@@ -1,8 +1,7 @@
-export { default as ContactSection } from './contact';
-export { default as Hero } from './hero';
-export { default as History } from './history';
-export { default as LogoHeader } from './others/logo-header';
-export { default as ServicesIntro } from './services-intro';
-export { default as ServicesSection } from './services';
-export { default as Team } from './team';
-export { default as Footer } from './footer';
+export * from './contact';
+export * from './hero-section';
+export * from './history';
+export * from './common/logo-header';
+export * from './services';
+export * from './team';
+export * from './footer';

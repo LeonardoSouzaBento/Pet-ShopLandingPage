@@ -1,4 +1,5 @@
-import { ContactInfoItem } from './footer/contact-info-item';
+import { ContactInfoItem } from "./footer/contact-info-item";
+import { PawIcon } from "./common/paw-svg";
 
 const css = {
   footer: `w-full  text-background`,
@@ -7,11 +8,14 @@ const css = {
   icon: `size-5 shrink-0 mb-1`,
 };
 
-const Footer = () => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={`${css.footer} bg-linear-to-br from-hero-from to-primary-900`}>
+    <footer
+      className={`${css.footer} bg-linear-to-br from-hero-from to-primary-900 relative`}
+    >
+      <PawIcon size="sm" position="bottom-right" className="-rotate-90 opacity-3" />
       <div className={css.container}>
         <ContactInfoItem icon="home_pin" title="Endereço">
           <>
@@ -24,20 +28,23 @@ const Footer = () => {
           (34) 98412-5832
         </ContactInfoItem>
 
-        <ContactInfoItem icon="schedule" iconSize="20px" title="Horário de atendimento">
+        <ContactInfoItem
+          icon="schedule"
+          iconSize="20px"
+          title="Horário de atendimento"
+        >
           Seg a Sex: 9h às 18h • Sábados: 8h às 14h
         </ContactInfoItem>
       </div>
 
       <div
         className={`w-full px-8 py-6 flex flex-col items-center border-t border-primary-50/16
-          text-primary-50/96 rounded-none small-text [&>p]:text-center 
-          [&>p]:font-light`}>
+          text-primary-50/80 rounded-none small-text [&>p]:text-center 
+          [&>p]:font-light`}
+      >
         <p>© {currentYear} O Melhor Pet Shop. Todos os direitos reservados.</p>
         <p className={`mt-2`}>CNPJ: 45.987.654/0001-22</p>
       </div>
     </footer>
   );
 };
-
-export default Footer;

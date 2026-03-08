@@ -6,7 +6,7 @@ const css = {
   img: `size-7 pl-px pb-px`,
 };
 
-const WhatsAppButton = () => {
+export const WhatsAppButton = () => {
   return (
     <Button
       onClick={() => openWhatsApp('Olá! Gostaria de saber mais sobre os serviços do Pet Shop.')}
@@ -17,5 +17,3 @@ const WhatsAppButton = () => {
     </Button>
   );
 };
-
-export default WhatsAppButton;

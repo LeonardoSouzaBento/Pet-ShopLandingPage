@@ -3,21 +3,19 @@ import {
   Hero,
   History,
   LogoHeader,
-  ServicesIntro,
-  ServicesSection,
   Team,
   Footer,
+  Services,
 } from "@/components/index";
-import WhatsAppButton from "@/components/others/whatsapp-button";
-// import { LinesOverlay } from 'lines-overlay';
+import { WhatsAppButton } from "@/components/common";
+// import { LinesOverlay } from "lines-overlay";
 
 const Home = () => {
   return (
     <div>
       <LogoHeader />
       <Hero />
-      <ServicesIntro />
-      <ServicesSection />
+      <Services />
       <Team />
       <ContactSection />
       <History />

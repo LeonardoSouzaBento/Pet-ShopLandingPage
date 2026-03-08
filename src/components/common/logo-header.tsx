@@ -1,4 +1,4 @@
-export default function LogoHeader() {
+export function LogoHeader() {
   return (
     <>
       <div
