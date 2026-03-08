@@ -5,10 +5,10 @@ export const History = () => {
   return (
     <Section variant="medium">
       <SectionHeader title="Nossa história" cssWrapper="mb-6" />
-      <SectionWrapper className="grid xl:grid-cols-2 gap-8 xl:gap-7 max-w-2xl xl:max-w-5xl items-center">
+      <SectionWrapper className="grid xl:grid-cols-2 gap-8 xl:gap-7 max-w-max! xl:max-w-6xl! mx-auto items-center">
         {/* Image */}
         <div className={`order-2 lg:order-2 fade-in`}>
-          <div className={`rounded-xl overflow-hidden shadow-xl`}>
+          <div className={`rounded-xl overflow-hidden shadow-xl max-w-2xl`}>
             <img
               src={storeImage}
               alt="Fachada da nossa loja"
@@ -19,7 +19,7 @@ export const History = () => {
         </div>
 
         {/* Text Content */}
-        <div className={`space-y-6 fade-in`}>
+        <div className={`space-y-6 fade-in max-w-2xl`}>
           <div
             className={`px-5 sm:px-0 space-y-4 text-muted-foreground 
             font-semibold`}>

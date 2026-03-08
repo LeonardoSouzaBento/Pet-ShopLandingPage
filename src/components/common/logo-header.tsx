@@ -3,7 +3,7 @@ export function LogoHeader() {
     <>
       <div
         className={`w-full h-24 flex items-center justify-center rounded-none z-8 
-        bg-linear-to-br from-primary-600 to-primary-700 shadow-sm`}
+        bg-linear-to-br from-primary-600 via-primary-700 to-primary-800 shadow-sm`}
       >
         <div className={`flex items-center gap-2.5`}>
           <div
