@@ -14,7 +14,7 @@ export default function DifferentialsList({
           lg:grid-cols-[auto_402px] lg:gap-6 xl:grid-cols-[auto_420px]
           transition-all duration-200`}
     >
-      <div className="flex flex-col gap-6 mb-6 lg:mb-0 order-2 sm:order-0 lg:order-2">
+      <div className="flex flex-col gap-6 sm:mb-6 order-2 sm:order-0 lg:order-2 lg:mb-0">
         <div
           className={`grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1
            rounded-2xl xl:grid-cols-1`}
@@ -31,7 +31,7 @@ export default function DifferentialsList({
           ))}
         </div>
         <div className="w-full flex justify-center">
-          <HeroButton className="w-full max-w-xl mx-auto" />
+          <HeroButton className="w-full max-w-xl mx-auto mb-0" />
         </div>
       </div>
 

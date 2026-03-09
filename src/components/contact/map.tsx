@@ -1,4 +1,4 @@
-const Map = () => {
+export const Map = () => {
   return (
     <div className={`rounded-3xl overflow-hidden shadow-xl h-100 lg:h-122 xl:h-116 fade-in border border-border/33`}>
       <iframe
@@ -15,5 +15,3 @@ const Map = () => {
     </div>
   );
 };
-
-export default Map;

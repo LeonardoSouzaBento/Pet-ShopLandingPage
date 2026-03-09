@@ -10,7 +10,7 @@ import {
 import { WhatsAppButton } from "@/components/common";
 // import { LinesOverlay } from "lines-overlay";
 
-const Home = () => {
+const Index = () => {
   return (
     <div>
       <LogoHeader />
@@ -26,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Index;

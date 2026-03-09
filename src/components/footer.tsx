@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <footer
-      className={`${css.footer} bg-linear-to-br from-hero-from to-primary-900 relative`}
+      className={`${css.footer} bg-linear-to-br from-hero-from to-primary-800 relative`}
     >
       <PawIcon size="sm" position="bottom-right" className="-rotate-90 opacity-3" />
       <div className={css.container}>
@@ -38,8 +38,8 @@ export const Footer = () => {
       </div>
 
       <div
-        className={`w-full px-8 py-6 flex flex-col items-center border-t border-primary-50/16
-          text-primary-50/80 rounded-none small-text [&>p]:text-center 
+        className={`w-full px-8 py-6 flex flex-col items-center border-t border-secondary-50/16
+          text-secondary-50/80 rounded-none small-text [&>p]:text-center 
           [&>p]:font-light`}
       >
         <p>© {currentYear} O Melhor Pet Shop. Todos os direitos reservados.</p>

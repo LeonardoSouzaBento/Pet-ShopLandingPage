@@ -1,28 +1,42 @@
+import { ContactCard } from "./index";
 import { HeroButton } from "../hero";
-import ContactCard from "./contact-card";
 
-const ContactCardList = () => {
+const contactGridCards = [
+  {
+    icon: "call",
+    iconStyles: "text-[22.5px]!",
+    title: "Telefone / WhatsApp",
+    content: "(34) 98412-5832",
+  },
+  {
+    icon: "home_pin",
+    iconStyles: "text-[25px]!",
+    title: "Endereço",
+    content: (
+      <>
+        Rua Itapecerica, 123 – Centro
+        <br />
+        Itapecerica
+      </>
+    ),
+  },
+];
+
+export const ContactCardList = () => {
   return (
     <div className={`space-y-6 -order-1 lg:order-2`}>
       <div className={`space-y-4 slide-up`}>
-        <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4`}>
-          <ContactCard
-            icon="call"
-            iconStyles="text-[22.5px]!"
-            title="Telefone / WhatsApp"
-          >
-            (34) 98412-5832
-          </ContactCard>
-
-          <ContactCard
-            icon="home_pin"
-            iconStyles="text-[25px]!"
-            title="Endereço"
-          >
-            Rua Itapecerica, 123 – Centro
-            <br />
-            Itapecerica
-          </ContactCard>
+        <div className={`grid grid-cols-1 sm:grid-cols-[1fr_1.5fr] lg:grid-cols-1 gap-4`}>
+          {contactGridCards.map((card, i) => (
+            <ContactCard
+              key={i}
+              icon={card.icon}
+              iconStyles={card.iconStyles}
+              title={card.title}
+            >
+              {card.content}
+            </ContactCard>
+          ))}
         </div>
 
         <ContactCard
@@ -41,4 +55,3 @@ const ContactCardList = () => {
   );
 };
 
-export default ContactCardList;
